@@ -15,6 +15,37 @@
         <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerJbt.jpg"/>
         <h1><span>The John Butler Trio</span></h1>
       </div>
+      <nav id="navigation" class="menu">
+        <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li onclick="deroulant()"><span class="bouton">Membres</span>
+            <ul id="deroulant" class="deroulant">
+              <li>
+                <a href="membres.html">Membres actuels</a>
+                <ul>
+                  <li><a href="#">John Butler</a></li>
+                  <li><a href="#">Byron Luiters</a></li>
+                  <li><a href="#">Grant Gerathy</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Anciens membres</a>
+                <ul>
+                  <li><a href="#">Nicky Bomba</a></li>
+                  <li><a href="#">Michael Barker</a></li>
+                  <li><a href="#">Shannon Birchall</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="actionsEtEngagements.html">Actions et engagements</a></li></li>
+          <li><a href="discographie.html">Discographie</a></li>
+          <li><a href="recompensesEtNominations.html">Récompenses et nominations</a></li></li>
+          <li><a href="videos.html">Vidéos</a></li>
+        </ul>
+      </nav>
+      <span onclick="ouverture()">Menu</span>
     </header>
     <div class="container">
       <div class="row"> <!--découpage vertical-->
@@ -25,5 +56,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/scriptsJs.js"></script>
   </body>
 </html>
