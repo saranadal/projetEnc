@@ -1,5 +1,11 @@
 /*Header*/
+/*Banniere
+------------------------------------------------------------------------------*/
 #imgBanniere {
+  max-width: 100%;
+}
+
+#imgMembres {
   max-width: 100%;
 }
 
@@ -22,6 +28,11 @@ h1 span {
   padding: 10px;
 }
 
+h1 img {
+  max-height:100px;
+}
+/*menu
+------------------------------------------------------------------------------*/
 .menu {
   height: 100%;
   width: 0;
@@ -66,4 +77,36 @@ h1 span {
 
 .show {
   display:block;
+}
+
+.btn {
+  top: 20px;
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  width: 100px;
+  color: white;
+
+}
+
+/*Footer
+------------------------------------------------------------------------------*/
+.imgFooter {
+  width: 50px;
+  filter: grayscale(100%);
+}
+
+.imgFooter:hover{
+  width: 50px;
+  filter: grayscale(0%);
+}
+
+.mentions{
+  text-align: center;
+}
+
+/*body
+------------------------------------------------------------------------------*/
+.police{
+  font-family: newcent;
 }
