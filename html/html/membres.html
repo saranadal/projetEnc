@@ -11,9 +11,72 @@
   <body>
     <header>
       <div class="banniere">
-        <img id="imgMembres" alt="headerJbt" src="../medias/images/groupe2.png"/>
-        <h1 id="membres"><span>Membres</span></h1>
+        <img id="imgMembres" alt="headerJbt" src="../medias/images/groupe.jpg"/>
+        <h1><span>Les membres</span></h1>
       </div>
+      <nav id="navigation" class="menu">
+        <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li onclick="deroulant()"><span class="bouton">Les membres</span>
+            <ul id="deroulant" class="deroulant">
+              <li>
+                <a href="membres.html">Membres actuels</a>
+                <ul>
+                  <li><a href="#">John Butler</a></li>
+                  <li><a href="#">Byron Luiters</a></li>
+                  <li><a href="#">Grant Gerathy</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Anciens membres</a>
+                <ul>
+                  <li><a href="#">Nicky Bomba</a></li>
+                  <li><a href="#">Michael Barker</a></li>
+                  <li><a href="#">Shannon Birchall</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="actionsEtEngagements.html">Actions et engagements</a></li></li>
+          <li><a href="discographie.html">Discographie</a></li>
+          <li><a href="recompensesEtNominations.html">Récompenses et nominations</a></li></li>
+          <li><a href="videos.html">Vidéos</a></li>
+        </ul>
+      </nav>
+      <button onclick="ouverture()" class="btn">menu</button>
+      <!--<span onclick="ouverture()"class="burger"></span>-->
     </header>
+    <div class="container">
+      <h2>Membres actuels</h2>
+      <div class="row">
+        <div class="six columns"><h3>John Butler</h3></div>
+        <div class="six columns"><img src="../medias/images/johnButler.jpg" alt="John Butler"/></div>
+      </div>
+      <div class="row">
+        <div class="six columns"><img src="../medias/images/ByronLuiters.jpeg" alt="Byron Luiters"/></div>
+        <div class="six columns"><h3>Byron Luiters</h3></div>
+      </div>
+      <div class="row">
+        <div class="six columns"><h3>Grant Gerathy</h3></div>
+        <div class="six columns"><img src="../medias/images/GrantGerathy.jpg" alt="Grant Gerathy"/></div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Anciens membres</h2>
+      <div class="row">
+        <div class="six columns"><img src="../medias/images/NickyBomba.jpg" alt="Nicky Bomba"/></div>
+        <div class="six columns"><h3>Nicky Bomba</h3></div>
+      </div>
+      <div class="row">
+        <div class="six columns"><h3>Michael Barker</h3></div>
+        <div class="six columns"><img src="../medias/images/MichaelBarker.jpg" alt="Michael Barker"/></div>
+      </div>
+      <div class="row">
+        <div class="six columns"><img src="../medias/images/ShannonBirchall.jpg" alt="Shannon Birchall"/></div>
+        <div class="six columns"><h3>Shannon Birchall</h3></div>
+      </div>
+    </div>
+  <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
   </body>
 </html>
