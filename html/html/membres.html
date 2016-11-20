@@ -4,14 +4,16 @@
     <meta charset="utf-8" lang="fr" />
     <title>The John Butler Trio</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-    <!--lien vers skeleton (framework css)-->
+<!--lien vers skeleton (framework css)-->
     <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
 </head>
   <body>
     <header>
+<!--Bannière-->
       <div class="banniere">
         <img id="imgMembres" alt="headerJbt" src="../medias/images/groupe.jpg"/>
+<!--Les membres (actuels et anciens)-->
         <h1><span>Les membres</span></h1>
       </div>
       <nav id="navigation" class="menu">
@@ -21,62 +23,102 @@
           <li onclick="deroulant()"><span class="bouton">Les membres</span>
             <ul id="deroulant" class="deroulant">
               <li>
-                <a href="membres.html">Membres actuels</a>
+                <a href="membres.html" href="#membresActuels">Membres actuels</a>
                 <ul>
-                  <li><a href="#">John Butler</a></li>
-                  <li><a href="#">Byron Luiters</a></li>
-                  <li><a href="#">Grant Gerathy</a></li>
+                  <!--Mise en place d'ancre pour les membres-->
+                  <li><a href="#johnButler">John Butler</a></li>
+                  <li><a href="#byronLuiters">Byron Luiters</a></li>
+                  <li><a href="#grantGerathy">Grant Gerathy</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#">Anciens membres</a>
+                <a href="#anciensMembres">Anciens membres</a>
                 <ul>
-                  <li><a href="#">Nicky Bomba</a></li>
-                  <li><a href="#">Michael Barker</a></li>
-                  <li><a href="#">Shannon Birchall</a></li>
+                  <li><a href="#nickyBomba">Nicky Bomba</a></li>
+                  <li><a href="#michaelBarker">Michael Barker</a></li>
+                  <li><a href="#shannonBirchall">Shannon Birchall</a></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li><a href="actionsEtEngagements.html">Actions et engagements</a></li></li>
           <li><a href="discographie.html">Discographie</a></li>
-          <li><a href="recompensesEtNominations.html">Récompenses et nominations</a></li></li>
           <li><a href="videos.html">Vidéos</a></li>
         </ul>
       </nav>
       <button onclick="ouverture()" class="btn">menu</button>
-      <!--<span onclick="ouverture()"class="burger"></span>-->
+<!--<span onclick="ouverture()"class="burger"></span>-->
     </header>
     <div class="container">
-      <h2>Membres actuels</h2>
+      <h2 id="membresActuels">Membres actuels</h2>
       <div class="row">
-        <div class="six columns"><h3>John Butler</h3></div>
-        <div class="six columns"><img src="../medias/images/johnButler.jpg" alt="John Butler"/></div>
+        <div class="six columns equalizer"><h3 id="johnButler">John Butler</h3>
+          <p>John Charles Wiltshire-Butler, né le 1er avril 1975 aux États-Unis, migre avec ses parents en Australie à l'âge de 10 ans.
+             À 16 ans, il commença à apprendre à jouer de la guitare.
+             En 1996,  il met son parcours universitaire de côté et démarre sa carrière musicale en tant que guitariste.</p>
+        </div>
+        <div class="six columns equalizer imgContainer"><img src="../medias/images/johnButler.jpg" alt="John Butler"/></div>
       </div>
       <div class="row">
-        <div class="six columns"><img src="../medias/images/ByronLuiters.jpeg" alt="Byron Luiters"/></div>
-        <div class="six columns"><h3>Byron Luiters</h3></div>
+        <div class="six columns equalizer imgContainer"><img src="../medias/images/byronLuiters.jpg" alt="Byron Luiters"/></div>
+        <div class="six columns equalizer"><h3 id="byronLuiters">Byron Luiters</h3>
+          <p>Byron Luiters est né en Australie, il est le bassiste, contrebassiste et claviériste du groupe.
+             À 16 ans, il commence à jouer sur un didgeridoo puis se tourne vers d'autres instruments.
+             En Juin 2009 Byron Luiters devient le nouveau bassiste de The John Butler Trio, remplaçant ainsi l'ancien bassiste Shannon Birchall.</p>
+        </div>
       </div>
       <div class="row">
-        <div class="six columns"><h3>Grant Gerathy</h3></div>
-        <div class="six columns"><img src="../medias/images/GrantGerathy.jpg" alt="Grant Gerathy"/></div>
-      </div>
-    </div>
-    <div class="container">
-      <h2>Anciens membres</h2>
-      <div class="row">
-        <div class="six columns"><img src="../medias/images/NickyBomba.jpg" alt="Nicky Bomba"/></div>
-        <div class="six columns"><h3>Nicky Bomba</h3></div>
-      </div>
-      <div class="row">
-        <div class="six columns"><h3>Michael Barker</h3></div>
-        <div class="six columns"><img src="../medias/images/MichaelBarker.jpg" alt="Michael Barker"/></div>
-      </div>
-      <div class="row">
-        <div class="six columns"><img src="../medias/images/ShannonBirchall.jpg" alt="Shannon Birchall"/></div>
-        <div class="six columns"><h3>Shannon Birchall</h3></div>
+        <div class="six columns equalizer"><h3 id="grantGerathy">Grant Gerathy</h3>
+          <p>Grant Gerathy est né en Australie. Il est issu d'une famille de musiciens, et commence à jouer de la batterie vers l'âge de six ans.
+             En 2013, il rejoint le groupe Johne Butler Trio en tant que batteur et choriste, certainement par l'entremise de Byron Luiters qu'il connaissait déjà. Ce dernier et John Butler sont pour Grant Gerathy les meilleurs musiciens au monde. </p>
+        </div>
+        <div class="six columns equalizer imgContainer"><img src="../medias/images/grantGerathy.jpg" alt="Grant Gerathy"/></div>
       </div>
     </div>
+    <div class="alternative">
+      <div class="container">
+        <h2 id="anciensMembres">Anciens membres</h2>
+        <div class="row">
+          <div class="six columns equalizer imgContainer"><img src="../medias/images/nickyBomba.jpg" alt="Nicky Bomba"/></div>
+          <div class="six columns equalizer"><h3 id="nickyBomba">Nicky Bomba</h3>
+            <p>Nicholas Caruana, alias Nicky Bomba, est né le 7 septembre 1963 à Malte, il est l'un des grands frère de Danielle, l'épouse de John Butler. Il est multiinstrumentiste un chanteur.
+               Actuellement, il est le leader du groupe Bomba, au sein duquel il occupe la place de batteur.
+               En Juillet 2009, il rejoint John Butler Trio, aux côtés de John Butler et Byron Luiters.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="six columns equalizer"><h3 id="michaelBarker">Michael Barker</h3>
+            <p>Michael Barker est un percussionniste et batteur né en 1966 en Nouvelle-Zélande.
+               Artiste réputé, il enregistré et joué en tournée avec des artistes importants. Il a été le batteur du groupe Johne Butler Trio de 2003 à 2009.
+               Depuis 2010, lui et son ami Grant Haua font parti du groupe Swamp Thing, </p>
+          </div>
+          <div class="six columns equalizer imgContainer"><img src="../medias/images/michaelBarker.jpg" alt="Michael Barker"/></div>
+        </div>
+        <div class="row">
+          <div class="six columns equalizer imgContainer"><img src="../medias/images/shannonBirchall.jpg" alt="Shannon Birchall"/></div>
+          <div class="six columns equalizer"><h3 id="shannonBirchall">Shannon Birchall</h3>
+            <p>Shannon Birchall est un musicien né en Australie. Multiinstrumentiste, il joue plus particulièrement de la contrebasse, de la basse, du violon, de la mandoline et de l'harmonica.
+               Il débute la contrebasse à l'âge de 15 ans, après avoir étudié d'abord le violon classique.
+               Shannon fait parti du groupe John Butler Trio de 2003 à 2009.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--utilisation d'un java script-->
   <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
+<!--FOOTER-->
+    <footer>
+      <div class="row">
+        <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
+        <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
+        <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
+        <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
+      </div>
+      <div class="row">
+        <div class="mentions twelve">
+          <p><a href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

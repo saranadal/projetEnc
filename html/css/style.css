@@ -35,7 +35,7 @@ h1 img {
   position: absolute;
   top: left bottom;
 }
-/*menu
+/*Menu
 ------------------------------------------------------------------------------*/
 .menu {
   height: 100%;
@@ -56,6 +56,9 @@ h1 img {
   color: #818181;
   display: block;
   transition: 0.3s
+}
+.bouton:hover{
+  cursor: pointer;
 }
 
 .menu a:hover, .offcanvas a:focus, .menu .bouton:hover, .offcanvas .bouton:focus{
@@ -100,17 +103,21 @@ body{
   font-family: Lucidatypewriter, monospace;
 }
 
-/*.container{
-  background-color: rgba(0, 0, 0, 0.1);
-}*/
+.alternative {
+  background-color: #0C2B63;
+}
 
 h2{
-  font-size: 30px
-  position: absolute;
-  padding-top: 10%;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   width: 100%;
   color: white;
+}
+
+h3{
+  color: black;
 }
 
 p{
@@ -123,9 +130,71 @@ p{
   text-align: center; justify-content: center;
 }
 
-.container{
-  
+
+div.row p{
+  font-size: 25px;
+  text-align: center;
 }
+
+/*peut-être inverser ces deux trucs et faire un derogation pour l'index et traiter tous les autres p
+plus facilement*/
+div.equalizer p{
+  font-size: 15px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.equalizer{
+  height: 366px;
+  overflow-y:auto;
+  background-color: rgba(155, 100, 100, 0.4);
+  border-radius: 5px;
+}
+.alternative .equalizer{
+  background-color: rgba(50, 90, 120, 0.5);
+}
+
+.imgContainer{
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+
+.row{
+  margin-bottom: 20px;
+}
+
+div.equalizer img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+sup{
+  position:relative;
+  color: red;
+}
+
+sup span{
+  display: none;
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px;
+  line-height: 15px;
+  width: 500px;
+  color: white;
+  border-radius: 5px;
+}
+
+sup:hover span {
+  display: block;
+  position: absolute;
+  background-color: grey;
+}
+
+.lienExt{
+  color: #8099A3;
+}
+
+
 
 /*Footer
 ------------------------------------------------------------------------------*/
