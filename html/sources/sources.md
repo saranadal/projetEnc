@@ -20,6 +20,5 @@
 
 [Adobe Kuler](https://color.adobe.com)
 
-# Commentaires
 
 Difficultés pour placer la fenêtre popup en dessous du curseur, pour la dimension des photographies.

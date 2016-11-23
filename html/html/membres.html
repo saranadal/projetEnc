@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" lang="fr" />
+    <meta charset="utf-8" lang="fr"/>
     <title>The John Butler Trio</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<!--lien vers skeleton (framework css)-->
+<!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css.
+Il permet la mise en placeaisée d'un responsive design-->
     <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
 </head>
+<!--Organisation des pages html-->
+<!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les élémentions
+de la page-->
+<!-- == header == est identique pour toutes les pages.
+Il comprend un élément <div></div> avec une class="banniere", une image.
+== <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence.
+== menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page.
+Utilisation d'un javascript pour le menu déroulant.
+-->
   <body>
     <header>
 <!--Bannière-->
@@ -23,9 +33,8 @@
           <li onclick="deroulant()"><span class="bouton">Les membres</span>
             <ul id="deroulant" class="deroulant">
               <li>
-                <a href="membres.html" href="#membresActuels">Membres actuels</a>
-                <ul>
-                  <!--Mise en place d'ancre pour les membres-->
+                <a href="membres.html">Membres actuels</a>
+                <ul><!--Mise en place d'ancre pour les membres-->
                   <li><a href="#johnButler">John Butler</a></li>
                   <li><a href="#byronLuiters">Byron Luiters</a></li>
                   <li><a href="#grantGerathy">Grant Gerathy</a></li>
