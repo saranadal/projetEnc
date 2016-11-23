@@ -5,14 +5,11 @@
   max-width: 100%;
 }
 
-#imgMembres {
-  max-width: 100%;
-  width: 100%;
-}
 
 .banniere {
   position: relative;
   width: 100%; /*pour la compatibilité avec IE6*/
+  text-align: center;
 }
 
 h1 {
@@ -37,6 +34,10 @@ h1 img {
 }
 /*Menu
 ------------------------------------------------------------------------------*/
+#menu{
+  color: black;
+}
+
 .menu {
   height: 100%;
   width: 0;
@@ -99,7 +100,7 @@ h1 img {
 /*body
 ------------------------------------------------------------------------------*/
 body{
-  background-color: #7F0603;
+  background-color: #560803; /*#7F0603;*/
   font-family: Lucidatypewriter, monospace;
 }
 
@@ -170,7 +171,7 @@ div.equalizer img{
 
 sup{
   position:relative;
-  color: red;
+  color: black;
 }
 
 sup span{
@@ -191,10 +192,51 @@ sup:hover span {
 }
 
 .lienExt{
-  color: #8099A3;
+  color: grey;
+}
+/*discographie*/
+figure
+{
+	display: inline-block;
+	text-align: center;
+	background-color:rgb(240, 218, 201);
+	border-radius:4px;
+	box-shadow: 2px 2px 5px #080A0D;
+	color: #403D39;
+	font-size: 15px;
+  position: relative;
+  width: 100%;
+
 }
 
+.disque {
+  width: 100%;
+}
+figure div
+{
+	display: none;
+	width: 100%;
+  height: 100%;
+	overflow-y: auto;
+}
 
+figure div ul
+{
+	list-style-type: decimal;
+}
+
+figure:hover div /* affichage des notes au survol */
+{
+	display: inline;
+	position: absolute;
+	background-color: rgb(25, 25, 25);
+	background-color: rgba(25,25,25,.7); /* légère transparence */
+	left: 0;
+  top: 0;
+	z-index: 500;
+	color: white;
+	/*line-height: 10px;*/
+}
 
 /*Footer
 ------------------------------------------------------------------------------*/
