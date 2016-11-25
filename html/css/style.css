@@ -1,10 +1,11 @@
-/*Header*/
+/*--------------------------------- HEADER -----------------------------------*/
+
+
 /*Banniere
 ------------------------------------------------------------------------------*/
 #imgBanniere {
   max-width: 100%;
 }
-
 
 .banniere {
   position: relative;
@@ -97,13 +98,21 @@ h1 img {
   font-size: x-large;
 }
 
-/*body
-------------------------------------------------------------------------------*/
+/*----------------------------------- BODY -----------------------------------*/
+
 body{
   background-color: #560803; /*#7F0603;*/
   font-family: Lucidatypewriter, monospace;
 }
 
+/*
+fontsquierrel
+@fontface {
+lui donner un nom puis donner les sources avec différents formats utilisés. src: url ("...") puis indiquer
+le format woff, woff2 puis ttf puis renvoyer le telechargement à webfont generator, puis Download your kit
+}
+{box-sizing border-box pour faire rentrer toutes les marges et les padding à la hauteur fixée}
+*/
 .alternative {
   background-color: #0C2B63;
 }
@@ -194,14 +203,26 @@ sup:hover span {
 .lienExt{
   color: grey;
 }
-/*discographie*/
+
+.imgReseau {
+  width: 45px;
+  filter: grayscale(100%);
+  position:absolute;
+}
+
+.imgReseau:hover{
+  width: 45px;
+  filter: grayscale(0%);
+}
+/*Discographie------------------------------------------------------------------
+ -----------------------------------------------------------------------------*/
 figure
 {
 	display: inline-block;
 	text-align: center;
-	background-color:rgb(240, 218, 201);
+	background-color:rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
 	border-radius:4px;
-	box-shadow: 2px 2px 5px #080A0D;
+	/*box-shadow: 2px 2px 5px #080A0D;*/
 	color: #403D39;
 	font-size: 15px;
   position: relative;
@@ -211,22 +232,21 @@ figure
 
 .disque {
   width: 100%;
+  box-shadow: 2px 2px 5px #080A0D;
 }
-figure div
-{
+
+figure div{
 	display: none;
 	width: 100%;
   height: 100%;
 	overflow-y: auto;
 }
 
-figure div ul
-{
+figure div ul{
 	list-style-type: decimal;
 }
 
-figure:hover div /* affichage des notes au survol */
-{
+figure:hover div{ /* affichage des notes au survol */
 	display: inline;
 	position: absolute;
 	background-color: rgb(25, 25, 25);
@@ -235,7 +255,12 @@ figure:hover div /* affichage des notes au survol */
   top: 0;
 	z-index: 500;
 	color: white;
+  box-shadow: 2px 2px 5px #080A0D;
 	/*line-height: 10px;*/
+}
+
+figure img {
+  border-radius:4px;
 }
 
 /*Footer
