@@ -1,106 +1,114 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html lang="fr">
+  <!--Head comportant les métas-données-->
   <head>
-    <meta charset="utf-8" lang="fr" />
-    <title>The John Butler Trio</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css.
-Il permet la mise en place aisée d'un responsive design-->
-    <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
-</head>
-<!--Organisation des pages html-->
-<!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les élémentions
-de la page-->
-<!-- == header == est identique pour toutes les pages.
-Il comprend un élément <div></div> avec une class="banniere", une image.
-== <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence.
-== menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page.
-Utilisation d'un javascript pour le menu.
--->
-  <body>
-    <header>
-<!--Bannière-->
-      <div class="banniere">
-        <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerAustralie.jpg"/>
-        <h1><span>Actions et Engagements</span></h1>
-      </div>
-      <nav id="navigation" class="menu">
-        <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li onclick="deroulant()"><span class="bouton">Les membres</span>
-            <ul id="deroulant" class="deroulant">
-              <li>
-                <a href="membres.html">Membres actuels</a>
-                <ul>
-                  <li><a href="membres.html#johnButler">John Butler</a></li>
-                  <li><a href="membres.html#byronLuiters">Byron Luiters</a></li>
-                  <li><a href="membres.html#grantGerathy">Grant Gerathy</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#anciensMembres">Anciens membres</a>
-                <ul>
-                  <li><a href="membres.html#nickyBomba">Nicky Bomba</a></li>
-                  <li><a href="membres.html#michaelBarker">Michael Barker</a></li>
-                  <li><a href="membres.html#shannonBirchall">Shannon Birchall</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="actionsEtEngagements.html">Actions et engagements</a></li>
-          <li><a href="discographie.html">Discographie</a></li>
-          <li><a href="videos.html">Vidéos</a></li>
-        </ul>
-      </nav>
-      <button onclick="ouverture()" class="btn">menu</button>
-      <!--<span onclick="ouverture()"class="burger"></span>-->
-    </header>
-    <div class="container">
-      <h2>Écologie et politique</h2>
-      <div class="row">
-        <p>
-          John Butler est depuis toujours un écologiste dans l'âme ; avec sa femme Danielle Caruana (également artiste et connue sous le nom de <a href="http://www.mamakin.com/" target="_blank" class="lienExt">Mama Kin</a>) et leurs deux enfants (Banjo et Jahli), ils vivent dans une maison auto-suffisante.
-          Plusieurs des chansons du groupe comportent des textes engagés. Ceci est notamment le cas de "Ocean", une chanson importante pour John Butler dans laquelle il transmet "la vie, la perte, l'amour, l'esprit" ; ou "Treat yo Mama" dans laquelle on peut entendre chanter sa femme, également chanteuse et compositrice sous le pseudonyme Mama Kin.
-        </p>
-        <p>
-          John Butler est "un défenseur de la paix, de la protection de l'environnement et de l'harmonie mondiale"<sup>1<span>Australian Associated Press (AAP) (19 Octobre 2004). "Busking Butler". The Age. Fairfax Media.</span></sup>.
-          Avec sa femme Danielle, il est l'un des plus grands partisans de la campagne "Save The Kimberley" en Australie. Le 4 octobre 2012, il est rejoint par 150 personnes au cours d'une manifestation.
-          La protestation était en réponse à l'implication de la société BHP Billiton (qui siège à Melbourne) dans la création d'un complexe industriel de gaz dans la région de Kimberley en Australie occidentale<sup>2<span> Alex Tibbitts (4 October 2012). "150 join John Butler as he takes Kimberley gas plant blockade to BHP's Melbourne HQ". The Wilderness Society. The Wilderness Society Australia Incorporated.</span></sup>.
-          John Butler est également contre l'extraction de gaz opérée par la Coal Seam Gas et a donné de nombreux concerts de soutien gratuit en avril 2014.
-        </p>
-      </div>
-    </div>
-    <div class="alternative">
+      <meta charset="utf-8"/>
+      <title>The John Butler Trio</title>
+      <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+  <!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css. Il permet la mise en place aisée d'un responsive design-->
+      <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
+      <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <!--Organisation des pages html-->
+  <!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les éléments de la page-->
+  <!-- == header == est identique pour toutes les pages. Il comprend un élément <div></div> avec une class="banniere", une image. == <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence. == menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page. Utilisation d'un javascript pour le menu.-->
+  <!--Body-->
+    <body>
+  <!--Header-->
+      <header>
+  <!--Bannière-->
+        <div class="banniere" id="hautPage"><!--ancre pour icône haut de page-->
+          <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerAustralie.jpg"/>
+  <!--Cette page est composée de deux titres de niveau <h2></h2>. Des notes en survol et des liens externes ont été ajoutés. Des liens (ancres) vers des vidéos du site ont également été créés-->
+          <h1><span>Actions et Engagements</span></h1><!--Titre de premier niveau-->
+        </div>
+  <!--Menu-->
+        <nav id="navigation" class="menu">
+          <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li onclick="deroulant()"><span class="bouton">Les membres</span>
+              <ul id="deroulant" class="deroulant">
+                <li>
+                  <a href="membres.html">Membres actuels</a>
+                  <ul>
+                    <li><a href="membres.html#johnButler">John Butler</a></li><!--ancre pour chaque artiste-->
+                    <li><a href="membres.html#byronLuiters">Byron Luiters</a></li>
+                    <li><a href="membres.html#grantGerathy">Grant Gerathy</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#anciensMembres">Anciens membres</a>
+                  <ul>
+                    <li><a href="membres.html#nickyBomba">Nicky Bomba</a></li>
+                    <li><a href="membres.html#michaelBarker">Michael Barker</a></li>
+                    <li><a href="membres.html#shannonBirchall">Shannon Birchall</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="actionsEtEngagements.html">Actions et engagements</a></li>
+            <li><a href="discographie.html">Discographie</a></li>
+            <li><a href="videos.html">Vidéos</a></li>
+          </ul>
+        </nav>
+        <button onclick="ouverture()" class="btn">menu</button>
+      </header>
       <div class="container">
-        <h2>Musique et arts</h2>
+  <!--Ecologie et politique-->
+        <h2>Écologie et politique</h2><!--Titre de deuxième niveau-->
         <div class="row">
           <p>
-            En juillet 2002, le label <a href="http://jarrahrecords.com/" target="_blank" class="lienExt">Jarrah Reccords</a> est créé par John Butler, les membres du groupe The Waifs et leur manager commun, Stevens. Cette maison de disque a permis à John Butler de maximise le contrôle de ses enregistrements. Jarrah Reccords est toujours le label du groupe.
+            John Butler est depuis toujours un écologiste dans l'âme ; avec sa femme Danielle Caruana et leurs deux enfants (leur fille Banjo et leur fils Jahli), ils vivent dans une maison auto-suffisante. Ils cultivent leurs
+            propres fruits et légumes, tentent de diminuer leur consommation et de réduire leurs déchets.
+            Plusieurs des chansons du groupe comportent des textes engagés. Ceci est notamment le cas de <a href="videos.html#ocean" class="lienInterne">"Ocean"</a><!--Lien ancre vers la vidéo Océan de la page videos.html-->,
+            une chanson importante pour John Butler dans laquelle il transmet "la vie, la perte, l'amour, l'esprit", et qui est également une véritable prouesse technique musicale ;
+            ou <a href="videos.html#treat" class="lienInterne">"Treat Yo Mama"</a><!--Lien ancre vers la vidéo Treat Yo Mama de la page videos.html-->, dans laquelle on peut entendre chanter sa femme,
+            également chanteuse et compositrice sous le pseudonyme de <a href="http://www.mamakin.com/" target="_blank" class="lienExt">Mama Kin</a><!--Lien vers site externe avec ouverture dans un nouvel onglet-->.
           </p>
           <p>
-            En 2005, John Butler et Danielle créent <a href="http://www.theseedfund.org/" target="_blank" class="lienExt">The Seed Fund</a>. Il s'agit d'une organisation philanthropique basée en Australie qui offrent des subventions chaque année à des artistes australiens dans tous les domaines possibles et dasn toutes les zones géographiques de l'île.
-            Ce fonds a été créé pour sensibiliser le secteur des arts à un niveau de professionnalisme et de durabilité équitable à d'autres secteurs. Ils fournissent l'infrastructure professionnelle et un soutien pour permettre à la carrière des artistes de prospérer.
-            L'équipe comprend 5 membres : John et Danielle Butler (administration) ; Stacia Goninon (direction générale) ; Carlo Santone (comité directeur) et Clara Iaccarino (directrice du développement).
+            John Butler est "un défenseur de la paix, de la protection de l'environnement et de l'harmonie mondiale"<sup>1<span>Australian Associated Press (AAP) (19 Octobre 2004). "Busking Butler". The Age. Fairfax Media.</span></sup><!--Note en survol pop-up-->.
+            Avec sa femme, il est l'un des plus grands partisans de la campagne "Save The Kimberley" en Australie. Le 4 octobre 2012, il est rejoint par 150 personnes au cours d'une <a href="videos.html#kimberley" class="lienInterne">manifestation</a><!--Lien ancre vers la vidéo Kimberley de la page videos.html-->.
+            La protestation était en réponse à l'implication de la société BHP Billiton (qui siège à Melbourne) dans la création d'un complexe industriel de gaz dans la région de Kimberley en Australie occidentale<sup>2<span> Alex Tibbitts (4 October 2012). "150 join John Butler as he takes Kimberley gas plant blockade to BHP's Melbourne HQ".
+            The Wilderness Society. The Wilderness Society Australia Incorporated.</span></sup><!--Note en survol pop-up-->.
+            John Butler est également contre l'extraction de gaz opérée par la Coal Seam Gas et a donné de nombreux concerts de soutien gratuit en avril 2014.
           </p>
+        </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
+      </div>
+      <div class="alternative"><!--class="alternative" pour changer la couleur du background-->
+        <div class="container">
+  <!--Musique et arts-->
+          <h2>Musique et arts</h2><!--Titre de deuxième niveau-->
+          <div class="row">
+            <p>
+              En juillet 2002, le label <a href="http://jarrahrecords.com/" target="_blank" class="lienExt">Jarrah Reccords</a><!--Lien vers site externe avec ouverture dans un nouvel onglet--> est créé par John Butler, les membres du groupe The Waifs et leur manager commun, Stevens.
+              Cette maison de disque a permis à John Butler de maximiser le contrôle de ses enregistrements. Jarrah Reccords est toujours le label du groupe.
+            </p>
+            <p>
+              En 2005, John Butler et Danielle créent <a href="http://www.theseedfund.org/" target="_blank" class="lienExt">The Seed Fund</a><!--Lien vers site externe avec ouverture dans un nouvel onglet-->.
+              Il s'agit d'une organisation philanthropique basée en Australie, qui offrent des subventions chaque année à des artistes australiens dans tous les domaines possibles et dans toutes les zones géographiques de l'île.
+              Ce fonds a été mis en place pour sensibiliser le secteur des arts à un niveau de professionnalisme et de durabilité équitable à d'autres secteurs. Ils fournissent l'infrastructure professionnelle et un soutien pour permettre à la carrière des artistes de prospérer.
+              L'équipe comprend cinq membres : John et Danielle Butler (administration) ; Stacia Goninon (direction générale) ; Carlo Santone (comité directeur) et Clara Iaccarino (directrice du développement).
+            </p>
+          </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="row">
-        <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
-        <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
-        <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
-        <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
-      </div>
-      <div class="row">
-        <div class="mentions twelve">
-          <p><a href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a></p>
+  <!--Footer identique pour chaque page .html-->
+      <footer>
+  <!--<div class="row"></div> commun à toutes les pages .html avec tous les liens (externes) vers les réseaux sociaux du groupe. Gris clair puis colorés au survol-->
+        <div class="row">
+          <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
+          <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
+          <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
+          <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
         </div>
-      </div>
-    </footer>
-<!--utilisation d'un petit java script pour le menu déroulant -->
-    <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
-  </body>
-</html>
+        <div class="row">
+          <div class="mentions twelve">
+            <p><a href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a></p>
+            <a class="valid"><img src="../medias/images/W3C_HTML5.png" alt="Html5 Valid"></a>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
+    </body>
+  </html>

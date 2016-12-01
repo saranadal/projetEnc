@@ -3,106 +3,134 @@
 
 /*Banniere
 ------------------------------------------------------------------------------*/
-#imgBanniere {
-  max-width: 100%;
+#imgBanniere
+{
+    max-width: 100%; /*permet à l'image de prendre les dimensions de l'écran*/
 }
 
-.banniere {
-  position: relative;
-  width: 100%; /*pour la compatibilité avec IE6*/
-  text-align: center;
+.banniere
+{
+    position: relative;
+    width: 100%; /*pour la compatibilité avec IE6*/
+    text-align: center;
 }
 
-h1 {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
-  color: white;
-  font-size: 80px
+h1
+{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 80px
 }
 
-h1 span {
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.4);
-  padding: 100px;
+h1 span
+{ /*permet l'effet de transparence*/
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 100px;
 }
 
-h1 img {
-  max-height: 85px;
-  position: absolute;
-  top: left bottom;
+h1 img
+{
+    max-height: 85px;
+    position: absolute;
+    top: left bottom;
 }
+
 /*Menu
 ------------------------------------------------------------------------------*/
-#menu{
-  color: black;
+#menu
+{
+    color: black; /*prore à la page discographie.html car le blanc habituel du bouton
+                 ne se voyait pas bien*/
 }
 
-.menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
+.menu
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-.menu a, .menu .bouton {
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  transition: 0.3s
+.menu a,
+.menu .bouton
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
 }
-.bouton:hover{
-  cursor: pointer;
-}
-
-.menu a:hover, .offcanvas a:focus, .menu .bouton:hover, .offcanvas .bouton:focus{
-  color: #f1f1f1;
-}
-
-.menu .fermeture {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.bouton:hover
+{
+    cursor: pointer;
 }
 
-@media screen and (max-height: 450px) {
-  .menu {padding-top: 15px;}
-  .menu a, .menu .bouton {font-size: 18px;}
+.menu a:hover,
+.offcanvas a:focus,
+.menu .bouton:hover,
+.offcanvas .bouton:focus
+{
+    color: #f1f1f1;
 }
 
-.deroulant {
-  display: none;
+.menu .fermeture
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-.show {
-  display:block;
+@media screen and (max-height : 450px) /*javaScript*/
+{
+    .menu{
+        padding-top: 15px;
+    }
+    .menu a,
+    .menu .bouton{
+        font-size: 18px;
+    }
 }
 
-.btn {
-  top: 20px;
-  position: fixed;
-  z-index: 100;
-  right: 20px;
-  width: 120px;
-  color: white;
-  font-size: x-large;
+.deroulant
+{
+    display: none;
 }
+
+.show
+{
+    display: block;
+}
+
+.btn
+{
+    top: 20px;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    width: 120px;
+    color: white;
+    font-size: x-large;
+}
+
 
 /*----------------------------------- BODY -----------------------------------*/
 
-body{
-  background-color: #560803; /*#7F0603;*/
-  font-family: Lucidatypewriter, monospace;
+body
+{
+    background-color: #560803; /* hésitation avec cette couleur qui était le premier choix #7F0603;*/
+    font-family: Lucidatypewriter, monospace;
 }
 
 /*
@@ -113,187 +141,264 @@ le format woff, woff2 puis ttf puis renvoyer le telechargement à webfont genera
 }
 {box-sizing border-box pour faire rentrer toutes les marges et les padding à la hauteur fixée}
 */
-.alternative {
-  background-color: #0C2B63;
+
+.alternative
+{
+    background-color: #0C2B63; /*couleur complémentaire du background-color du body*/
 }
 
-h2{
-  font-size: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  width: 100%;
-  color: white;
+h2
+{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    color: white;
 }
 
-h3{
-  color: black;
+h3
+{
+    color: black;
 }
 
-p{
-  font-size: 30px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  padding-right: 30px;
-  padding-left: 30px;
-  color: white!important; /*!important permet de déroger à la règle établie par le framework skeleton*/
-  text-align: center; justify-content: center;
+p
+{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white !important; /*!important permet de déroger à la règle établie par le framework skeleton*/
+    text-align: center;
+    justify-content: center;
 }
 
 
-div.row p{
-  font-size: 25px;
-  text-align: center;
+div.row p
+{
+    font-size: 25px;
+    text-align: center;
 }
 
-/*peut-être inverser ces deux trucs et faire un derogation pour l'index et traiter tous les autres p
-plus facilement*/
-div.equalizer p{
-  font-size: 15px;
-  text-align: justify;
-  padding: 20px;
+div.equalizer p
+{
+    font-size: 15px;
+    text-align: justify;
+    padding: 20px;
 }
 
-.equalizer{
-  height: 366px;
-  overflow-y:auto;
-  background-color: rgba(155, 100, 100, 0.4);
-  border-radius: 5px;
+.equalizer
+{
+    height: 366px;
+    overflow-y: auto;
+    background-color: rgba(155, 100, 100, 0.4);
+    border-radius: 5px;
 }
-.alternative .equalizer{
-  background-color: rgba(50, 90, 120, 0.5);
-}
-
-.imgContainer{
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0)!important;
+.alternative .equalizer
+{
+    background-color: rgba(50, 90, 120, 0.5);
 }
 
-.row{
-  margin-bottom: 20px;
+.imgContainer
+{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0) !important; /*!important permet de déroger à la règle établie par le framework skeleton*/
 }
 
-div.equalizer img{
-  max-width: 100%;
-  border-radius: 5px;
+.row
+{
+    margin-bottom: 20px;
 }
 
-sup{
-  position:relative;
-  color: black;
+div.equalizer img
+{
+    max-width: 100%;
+    border-radius: 5px;
 }
 
-sup span{
-  display: none;
-  font-size: 15px;
-  padding: 10px;
-  margin: 5px;
-  line-height: 15px;
-  width: 500px;
-  color: white;
-  border-radius: 5px;
+sup
+{
+    position: relative;
+    color: #5107E2
 }
 
-sup:hover span {
-  display: block;
-  position: absolute;
-  background-color: grey;
+sup span
+{
+    display: none;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    line-height: 15px;
+    width: 500px;
+    color: grey;
+    border-radius: 5px;
 }
 
-.lienExt{
-  color: grey;
+sup:hover span
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(240, 218, 201);
 }
 
-.imgReseau {
-  width: 45px;
-  filter: grayscale(100%);
-  position:absolute;
+.lienExt /*lien souligné  en pointillé de la même couleur que le texte*/
+{
+    color: white;
+    text-decoration: none;
+    border-bottom: dotted 1px;
 }
 
-.imgReseau:hover{
-  width: 45px;
-  filter: grayscale(0%);
+.lienExt:hover /*lien qui change de couleur au survol*/
+{
+    color: grey;
 }
-/*Discographie------------------------------------------------------------------
+
+.lienInterne /*lien souligné  en pointillé de la même couleur que le texte*/
+{
+    color: white;
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+
+.lienInterne:hover /*lien qui change de couleur au survol*/
+{
+    color: grey;
+}
+
+.imgReseau
+{
+    width: 45px;
+    filter: grayscale(100%);
+    position: absolute;
+}
+
+.imgReseau:hover
+{
+    width: 45px;
+    filter: grayscale(0%);
+}
+
+
+/*Discographie
  -----------------------------------------------------------------------------*/
 figure
 {
-	display: inline-block;
-	text-align: center;
-	background-color:rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
-	border-radius:4px;
-	/*box-shadow: 2px 2px 5px #080A0D;*/
-	color: #403D39;
-	font-size: 15px;
-  position: relative;
-  width: 100%;
-
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
+    border-radius: 4px;
+    /* premier choix : box-shadow: 2px 2px 5px #080A0D;*/
+    color: #403D39;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
 }
 
-.disque {
-  width: 100%;
-  box-shadow: 2px 2px 5px #080A0D;
+figure img
+{
+    border-radius: 4px;
 }
 
-figure div{
-	display: none;
-	width: 100%;
-  height: 100%;
-	overflow-y: auto;
+figure div
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
 }
 
-figure div ul{
-	list-style-type: decimal;
+figure div ul
+{
+    list-style-type: decimal;
 }
 
-figure:hover div{ /* affichage des notes au survol */
-	display: inline;
-	position: absolute;
-	background-color: rgb(25, 25, 25);
-	background-color: rgba(25,25,25,.7); /* légère transparence */
-	left: 0;
-  top: 0;
-	z-index: 500;
-	color: white;
-  box-shadow: 2px 2px 5px #080A0D;
-	/*line-height: 10px;*/
+figure:hover div /* affichage des notes au survol */
+{
+    display: inline;
+    position: absolute;
+    background-color: rgb(25, 25, 25);
+    background-color: rgba(25, 25, 25, .7); /* légère transparence */
+    left: 0;
+    top: 0;
+    z-index: 500;
+    color: white;
+    box-shadow: 6px 6px 10px #080A0D;
+    border-radius: 4px;
 }
 
-figure img {
-  border-radius:4px;
+.disque
+{
+    width: 100%;
 }
 
-/*Footer
+
+/*Videos
 ------------------------------------------------------------------------------*/
-.imgFooter {
-  width: 50px;
-  filter: grayscale(100%);
+figure object.video
+{
+    width: 100%;
+    border-radius: 4px;
 }
 
-.imgFooter:hover{
-  width: 50px;
-  filter: grayscale(0%);
+figure.video
+{
+    width: auto;
 }
 
-.mentions{
-  text-align: center;
+
+/*---------------------------------FOOTER-------------------------------------*/
+.hautPage img
+{
+    width: 50px;
+}
+.hautPage
+{
+    float: right;
+    margin-right: 40px;
 }
 
-footer{
-  background-color: rgb(240, 218, 201);
-  padding-top: 20px;
+footer
+{
+    background-color: rgb(240, 218, 201); /*couleur récupérer sur le logo du groupe*/
+    padding-top: 20px;
 }
 
-div.mentions p{
-  font-size: 20px;
-  color: black !important;
+div.mentions p
+{
+    font-size: 20px;
+    color: black !important;
 }
 
-div.mentions a{
-  text-decoration: none;
-  color: black;
+div.mentions a
+{
+    text-decoration: none;
+    color: black;
 }
 
-div.mentions a:hover{
-  color: grey;
+div.mentions a:hover
+{
+    color: grey;
+}
+
+.imgFooter
+{
+    width: 50px;
+    filter: grayscale(100%);
+}
+
+.imgFooter:hover
+{
+    width: 50px;
+    filter: grayscale(0%);
+}
+
+.mentions
+{
+    text-align: center;
+}
+
+.valid img
+{
+    width: 100px;
 }

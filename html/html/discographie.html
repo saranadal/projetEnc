@@ -1,372 +1,372 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html lang="fr">
+  <!--Head comportant les métas-données-->
   <head>
-    <meta charset="utf-8" lang="fr"/>
-    <title>The John Butler Trio</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css.
-Il permet la mise en place aisée d'un responsive design-->
-    <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
-</head>
-<!--Organisation des pages html-->
-<!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les élémentions
-de la page-->
-<!-- == header == est identique pour toutes les pages.
-Il comprend un élément <div></div> avec une class="banniere", une image.
-== <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence.
-== menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page.
-Utilisation d'un javascript pour le menu.
--->
-  <body id="discographie">
-    <header>
-<!--Bannière-->
-      <div class="banniere">
-        <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerGroupe3.jpg"/>
-        <h1><span>Discographie</span></h1>
-      </div>
-      <nav id="navigation" class="menu">
-        <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li onclick="deroulant()"><span class="bouton">Les membres</span>
-            <ul id="deroulant" class="deroulant">
-              <li>
-                <a href="membres.html">Membres actuels</a>
-                <ul>
-                  <li><a href="membres.html#johnButler">John Butler</a></li>
-                  <li><a href="membres.html#byronLuiters">Byron Luiters</a></li>
-                  <li><a href="membres.html#grantGerathy">Grant Gerathy</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#anciensMembres">Anciens membres</a>
-                <ul>
-                  <li><a href="membres.html#nickyBomba">Nicky Bomba</a></li>
-                  <li><a href="membres.html#michaelBarker">Michael Barker</a></li>
-                  <li><a href="membres.html#shannonBirchall">Shannon Birchall</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="actionsEtEngagements.html">Actions et engagements</a></li>
-          <li><a href="discographie.html">Discographie</a></li>
-          <li><a href="videos.html">Vidéos</a></li>
-        </ul>
-      </nav>
-      <button id="menu" onclick="ouverture()" class="btn">menu</button>
-<!--<span onclick="ouverture()"class="burger"></span>-->
-    </header>
-    <div class="container">
-      <h2>Albums studio</h2>
-      <div class="row">
-        <div class="four columns">
-          <figure>
-            <img alt="John Butler 1998" class="disque" src="../medias/images/johnButlerCd.jpg"/>
-            <div>
-              <ul>
-                <li><em>Valley</em></li>
-                <li><em>Busted</em></li>
-                <li><em>Sista</em></li>
-                <li><em>Ocean</em></li>
-                <li><em>Colours</em></li>
-                <li><em>Crazy</em></li>
-                <li><em>Keeper</em></li>
-                <li><em>Under an Indian Sky</em></li>
-              </ul>
-            </div>
-            <figcaption>John Butler <time datetime="1998">(1998)</time></figcaption>
-        </figure>
+      <meta charset="utf-8"/>
+      <title>The John Butler Trio</title>
+      <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+  <!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css. Il permet la mise en place aisée d'un responsive design-->
+      <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
+      <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <!--Organisation des pages html-->
+  <!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les éléments de la page-->
+  <!-- == header == est identique pour toutes les pages. Il comprend un élément <div></div> avec une class="banniere", une image. == <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence. == menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page. Utilisation d'un javascript pour le menu.-->
+  <!--Body-->
+    <body>
+  <!--Header-->
+      <header>
+  <!--Bannière-->
+        <div class="banniere" id="hautPage"><!--ancre pour icône haut de page-->
+          <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerGroupe3.jpg"/>
+  <!--Page en deux parties avec deux titres <h2></h2>. Pochettes des cd avec leur titre en-dessous. Les titres des albums aparaissent en survol avec effet de transparence et un effet 3D grâce à la box-shadow cf: page CSS-->
+          <h1><span>Discographie</span></h1><!--Titre de premier niveau-->
         </div>
-        <div class="four columns">
-          <figure>
-          <img alt="Three" class="disque" src="../medias/images/three.jpg" />
-            <div>
-              <ul>
-                <li><em>Betterman</em></li>
-                <li><em>Attitude</em></li>
-                <li><em>Media</em></li>
-                <li><em>Believe</em></li>
-                <li><em>Take</em></li>
-                <li><em>Life Ain’t What It Seems</em></li>
-                <li><em>Money</em></li>
-                <li><em>Foundation</em></li>
-              </ul>
-            </div>
-          <figcaption>Three <time datetime="2001">(2001)</time></figcaption>
-          </figure>
-          </div>
-          <div class="four columns">
-            <figure>
-            <img alt="Sunrise over Sea" class="disque" src="../medias/images/sunrise.jpg" />
-              <div>
-                <ul>
-                  <li><em>Treat Yo Mama</em></li>
-                  <li><em>Peaches and Cream</em></li>
-                  <li><em>Company Sin</em></li>
-                  <li><em>What You Want</em></li>
-                  <li><em>Damned To Hell</em></li>
-                  <li><em>Hello</em></li>
-                  <li><em>Bound To Ramble</em></li>
-                  <li><em>Seeing Angels</em></li>
-                  <li><em>There’ll Come A Time</em></li>
-                  <li><em>Zebra</em></li>
-                  <li><em>Mist</em></li>
-                  <li><em>Oldman</em></li>
-                  <li><em>Sometimes</em></li>
-                  <li><em>Something’s Gotta Give Includes 7:07 of silence and ambiance)
-                    Additional songs featured on the Limited Edition Vinyl:
-                    Losing My Cool
-                    Something’s Gotta Give
-                    Across The Universe
-                    Treat Yo Mama (Country Funk Mix)</em></li>
+  <!--Menu-->
+        <nav id="navigation" class="menu">
+          <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li onclick="deroulant()"><span class="bouton">Les membres</span>
+              <ul id="deroulant" class="deroulant">
+                <li>
+                  <a href="membres.html">Membres actuels</a>
+                  <ul>
+                    <li><a href="membres.html#johnButler">John Butler</a></li><!--ancre pour chaque artiste-->
+                    <li><a href="membres.html#byronLuiters">Byron Luiters</a></li>
+                    <li><a href="membres.html#grantGerathy">Grant Gerathy</a></li>
                   </ul>
-                </div>
-                <figcaption>Sunrise Over Sea <time datetime="2003">(2003)</time></figcaption>
-                </figure>
-              </div>
-            </div>
+                </li>
+                <li>
+                  <a href="#anciensMembres">Anciens membres</a>
+                  <ul>
+                    <li><a href="membres.html#nickyBomba">Nicky Bomba</a></li>
+                    <li><a href="membres.html#michaelBarker">Michael Barker</a></li>
+                    <li><a href="membres.html#shannonBirchall">Shannon Birchall</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="actionsEtEngagements.html">Actions et engagements</a></li>
+            <li><a href="discographie.html">Discographie</a></li>
+            <li><a href="videos.html">Vidéos</a></li>
+          </ul>
+        </nav>
+        <button id="menu" onclick="ouverture()" class="btn">menu</button>
+      </header>
+      <div class="container">
+  <!--Albums studio-->
+        <h2>Albums studio</h2><!--Titre de deuxième niveau-->
         <div class="row">
           <div class="four columns">
             <figure>
-              <img alt="Grand National" class="disque" src="../medias/images/grandNational.jpg"/>
+              <img alt="John Butler 1998" class="disque" src="../medias/images/johnButlerCd.jpg"/>
               <div>
                 <ul>
-                  <li><em>Better Than</em></li>
-                  <li><em>Daniella</em></li>
-                  <li><em>Funky Tonight</em></li>
-                  <li><em>Caroline</em></li>
-                  <li><em>Good Excuse</em></li>
+                  <li><em>Valley</em></li>
+                  <li><em>Busted</em></li>
+                  <li><em>Sista</em></li>
+                  <li><em>Ocean</em></li>
+                  <li><em>Colours</em></li>
+                  <li><em>Crazy</em></li>
+                  <li><em>Keeper</em></li>
+                  <li><em>Under an Indian Sky</em></li>
+                </ul>
+              </div>
+              <figcaption>John Butler <time datetime="1998">(1998)</time></figcaption><!--Nom et date de sortie de l'album-->
+          </figure>
+          </div>
+          <div class="four columns">
+            <figure>
+            <img alt="Three" class="disque" src="../medias/images/three.jpg" />
+              <div>
+                <ul>
+                  <li><em>Betterman</em></li>
+                  <li><em>Attitude</em></li>
+                  <li><em>Media</em></li>
+                  <li><em>Believe</em></li>
+                  <li><em>Take</em></li>
+                  <li><em>Life Ain’t What It Seems</em></li>
+                  <li><em>Money</em></li>
+                  <li><em>Foundation</em></li>
+                </ul>
+              </div>
+            <figcaption>Three <time datetime="2001">(2001)</time></figcaption><!--Nom et date de sortie de l'album-->
+            </figure>
+            </div>
+            <div class="four columns">
+              <figure>
+              <img alt="Sunrise over Sea" class="disque" src="../medias/images/sunrise.jpg" />
+                <div>
+                  <ul>
+                    <li><em>Treat Yo Mama</em></li>
+                    <li><em>Peaches and Cream</em></li>
+                    <li><em>Company Sin</em></li>
+                    <li><em>What You Want</em></li>
+                    <li><em>Damned To Hell</em></li>
+                    <li><em>Hello</em></li>
+                    <li><em>Bound To Ramble</em></li>
+                    <li><em>Seeing Angels</em></li>
+                    <li><em>There’ll Come A Time</em></li>
+                    <li><em>Zebra</em></li>
+                    <li><em>Mist</em></li>
+                    <li><em>Oldman</em></li>
+                    <li><em>Sometimes</em></li>
+                    <li><em>Something’s Gotta Give Includes 7:07 of silence and ambiance)
+                      Additional songs featured on the Limited Edition Vinyl:
+                      Losing My Cool
+                      Something’s Gotta Give
+                      Across The Universe
+                      Treat Yo Mama (Country Funk Mix)</em></li>
+                    </ul>
+                  </div>
+                  <figcaption>Sunrise Over Sea <time datetime="2003">(2003)</time></figcaption><!--Nom et date de sortie de l'album-->
+                  </figure>
+                </div>
+              </div>
+          <div class="row">
+            <div class="four columns">
+              <figure>
+                <img alt="Grand National" class="disque" src="../medias/images/grandNational.jpg"/>
+                <div>
+                  <ul>
+                    <li><em>Better Than</em></li>
+                    <li><em>Daniella</em></li>
+                    <li><em>Funky Tonight</em></li>
+                    <li><em>Caroline</em></li>
+                    <li><em>Good Excuse</em></li>
+                    <li><em>Used To Get High</em></li>
+                    <li><em>Gov Did Nothin’</em></li>
+                    <li><em>Groovin’ Slowly</em></li>
+                    <li><em>Devil Running</em></li>
+                    <li><em>Losing You</em></li>
+                    <li><em>Nowhere Man</em></li>
+                    <li><em>Fire In The Sky</em></li>
+                    <li><em>Gonna Take It</em></li>
+                  </ul>
+                </div>
+                <figcaption>Grand National <time datetime="2007">(2007)</time></figcaption><!--Nom et date de sortie de l'album-->
+              </figure>
+            </div>
+            <div class="four columns">
+              <figure>
+                <img alt="April Uprising" class="disque" src="../medias/images/aprilUprising.jpg"/>
+                <div>
+                  <ul>
+                    <li><em>Revolution</em></li>
+                    <li><em>One Way Road</em></li>
+                    <li><em>C’mon Now</em></li>
+                    <li><em>I’d Do Anything (Soldier’s Lament)</em></li>
+                    <li><em>Ragged Mile (Spirit Song)</em></li>
+                    <li><em>Johnny’s Gone</em></li>
+                    <li><em>Close To You</em></li>
+                    <li><em>Don’t Wanna See Your Face</em></li>
+                    <li><em>Take Me</em></li>
+                    <li><em>Fool For You</em></li>
+                    <li><em>To Look Like You</em></li>
+                    <li><em>Steal It</em></li>
+                    <li><em>Mystery Man</em></li>
+                    <li><em>Gonna Be A Long Time</em></li>
+                    <li><em>A Star Is Born</em></li>
+                  </ul>
+                </div>
+                <figcaption>April Uprising <time datetime="2010">(2010)</time></figcaption><!--Nom et date de sortie de l'album-->
+              </figure>
+            </div>
+            <div class="four columns">
+              <figure>
+                <img alt="Flesh &amp; Blood" class="disque" src="../medias/images/fleshBlood.jpg"/>
+                <div>
+                  <ul>
+                    <li><em>Spring to Come</em></li>
+                    <li><em>Livin in the City</em></li>
+                    <li><em>Cold Wind</em></li>
+                    <li><em>Bullet Girl</em></li>
+                    <li><em>Devil Woman</em></li>
+                    <li><em>Blame It On Me</em></li>
+                    <li><em>Only One</em></li>
+                    <li><em>Young and Wild</em></li>
+                    <li><em>Wings Are Wide</em></li>
+                    <li><em>How You Sleep at Night</em></li>
+                    <li><em>You’re Free</em></li>
+                  </ul>
+                </div>
+                <figcaption>Flesh &amp; Blood <time datetime="2014">(2014)</time></figcaption><!--Nom et date de sortie de l'album-->
+              </figure>
+            </div>
+          </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
+        </div>
+    <div class="alternative">
+      <div class="container">
+        <h2>Albums live</h2>
+        <div class="row">
+          <div class="four columns">
+            <figure>
+              <img alt="Living 2001-2002" class="disque" src="../medias/images/living.jpg"/>
+              <div>
+                Disque 1
+                <ul>
+                  <li><em>Attitude</em></li>
+                  <li><em>Pickapart</em></li>
+                  <li><em>Valley</em></li>
+                  <li><em>Spring</em></li>
+                  <li><em>Crazy</em></li>
+                  <li><em>Colours</em></li>
+                  <li><em>Treat Yo Mama</em></li>
+                </ul>
+                Disque 2
+                <ul>
+                  <li><em>Sista</em></li>
+                  <li><em>Earthbound Child</em></li>
+                  <li><em>Betterman</em></li>
+                  <li><em>Don’t Understand</em></li>
+                  <li><em>Believe</em></li>
+                  <li><em>Money</em></li>
+                  <li><em>Take</em></li>
+                  <li><em>Home Is Where The Heart Is (studio verson)</em></li>
+                </ul>
+              </div>
+              <figcaption>Living 2001-2002 <time datetime="2003">(2003)</time></figcaption><!--Nom et date de sortie de l'album-->
+            </figure>
+          </div>
+          <div class="four columns">
+            <figure>
+              <img alt="Live at St. Gallen" class="disque" src="../medias/images/stGallen.jpg"/>
+              <div>
+                DISQUE 1
+                <ul>
+                  <li><em>Treat Yo Mama</em></li>
+                  <li><em>Company Sin</em></li>
+                  <li><em>Somethings Gotta Give</em></li>
+                  <li><em>What You Want</em></li>
+                  <li><em>Band Introduction</em></li>
+                  <li><em>Oldman</em></li>
+                  <li><em>Ocean</em></li>
+                </ul>
+                DISQUE 2
+                <ul>
+                  <li><em>Peaches and Cream</em></li>
+                  <li><em>Pickapart</em></li>
+                  <li><em>Betterman</em></li>
+                  <li><em>Hello</em></li>
+                  <li><em>Zebra</em></li>
+                  <li><em>Take</em></li>
+                </ul>
+              </div>
+              <figcaption>Live at St. Gallen <time datetime="2005">(2005)</time></figcaption><!--Nom et date de sortie de l'album-->
+            </figure>
+          </div>
+          <div class="four columns">
+            <figure>
+              <img alt="One small Step..." class="disque" src="../medias/images/oneSmall.jpg"/>
+              <div>
+                <ul>
                   <li><em>Used To Get High</em></li>
-                  <li><em>Gov Did Nothin’</em></li>
-                  <li><em>Groovin’ Slowly</em></li>
-                  <li><em>Devil Running</em></li>
-                  <li><em>Losing You</em></li>
-                  <li><em>Nowhere Man</em></li>
-                  <li><em>Fire In The Sky</em></li>
-                  <li><em>Gonna Take It</em></li>
+                  <li><em>Treat Yo Mama</em></li>
+                  <li><em>Danielle</em></li>
+                  <li><em>Ocean</em></li>
+                  <li><em>Better Than</em></li>
+                  <li><em>Zebra</em></li>
+                  <li><em>Fire in the sky</em></li>
+                  <li><em>Funky Tonight</em></li>
                 </ul>
               </div>
-              <figcaption>Grand National <time datetime="2007">(2007)</time></figcaption>
+              <figcaption>One small Step... <time datetime="2008">(2008)</time></figcaption><!--Nom et date de sortie de l'album-->
             </figure>
           </div>
+        </div>
+        <div class="row">
           <div class="four columns">
             <figure>
-              <img alt="April Uprising" class="disque" src="../medias/images/aprilUprising.jpg"/>
+              <img alt="Live at Red Rocks" class="disque" src="../medias/images/liveAtRedRocks.jpg"/>
               <div>
+                DISQUE 1
                 <ul>
+                  <li><em>Introduction</em></li>
+                  <li><em>Use to Get High</em></li>
+                  <li><em>I'd Do Anything</em></li>
+                  <li><em>Betterman</em></li>
+                  <li><em>Don't Wanna See Your Face</em></li>
                   <li><em>Revolution</em></li>
+                  <li><em>Hoe Down</em></li>
+                  <li><em>Johnny's Gone</em></li>
+                  <li><em>Take me</em></li>
+                  <li><em>Treat Yo Mama</em></li>
+                  <li><em>Losing You (featuring Mama Kin)</em></li>
+                  <li><em>Intro to Ocean</em></li>
+                  <li><em>Treat Yo Mama</em></li>
+                </ul>
+                DISQUE 2
+                <ul>
+                  <li><em>Ragged Mile</em></li>
+                  <li><em>Zebra</em></li>
+                  <li><em>Good Excuse</em></li>
+                  <li><em>C'mon Now</em></li>
+                  <li><em>Close to You</em></li>
+                  <li><em>Peaches ans Cream</em></li>
                   <li><em>One Way Road</em></li>
-                  <li><em>C’mon Now</em></li>
-                  <li><em>I’d Do Anything (Soldier’s Lament)</em></li>
-                  <li><em>Ragged Mile (Spirit Song)</em></li>
-                  <li><em>Johnny’s Gone</em></li>
-                  <li><em>Close To You</em></li>
-                  <li><em>Don’t Wanna See Your Face</em></li>
-                  <li><em>Take Me</em></li>
-                  <li><em>Fool For You</em></li>
-                  <li><em>To Look Like You</em></li>
-                  <li><em>Steal It</em></li>
-                  <li><em>Mystery Man</em></li>
-                  <li><em>Gonna Be A Long Time</em></li>
-                  <li><em>A Star Is Born</em></li>
+                  <li><em>Funky Tonight</em></li>
                 </ul>
               </div>
-              <figcaption>April Uprising <time datetime="2010">(2010)</time></figcaption>
+              <figcaption>Live at Red Rocks <time datetime="2011">(2011)</time></figcaption><!--Nom et date de sortie de l'album-->
             </figure>
           </div>
           <div class="four columns">
             <figure>
-              <img alt="Flesh &amp; Blood" class="disque" src="../medias/images/fleshBlood.jpg"/>
+              <img alt="John Butler Tin Shed Tales" class="disque" src="../medias/images/tinShed.jpg"/>
               <div>
+                DISQUE 1
                 <ul>
-                  <li><em>Spring to Come</em></li>
-                  <li><em>Livin in the City</em></li>
-                  <li><em>Cold Wind</em></li>
-                  <li><em>Bullet Girl</em></li>
-                  <li><em>Devil Woman</em></li>
-                  <li><em>Blame It On Me</em></li>
-                  <li><em>Only One</em></li>
-                  <li><em>Young and Wild</em></li>
-                  <li><em>Wings Are Wide</em></li>
-                  <li><em>How You Sleep at Night</em></li>
-                  <li><em>You’re Free</em></li>
+                  <li><em>Acknowledging Ancestors</em></li>
+                  <li><em>Johnny's Gone</em></li>
+                  <li><em>Grass Is Greener</em></li>
+                  <li><em>Better Than</em></li>
+                  <li><em>We Drove Out To Kalgoorlie</em></li>
+                  <li><em>Gonna Be a Long Time</em></li>
+                  <li><em>Joseph And Paddy Roe</em></li>
+                  <li><em>Kimberley</em></li>
+                  <li><em>My Grandfather’s Guitar</em></li>
+                  <li><em>Danny Boy</em></li>
+                  <li><em>Pickapart</em></li>
+                </ul>
+                DISQUE 2
+                <ul>
+                  <li><em>Mystery Man</em></li>
+                  <li><em>Koprivshtitsa</em></li>
+                  <li><em>Revolution</em></li>
+                  <li><em>Guy On My Shoulder</em></li>
+                  <li><em>Used To Get High</em></li>
+                  <li><em>Pinjarra </em></li>
+                  <li><em>Treat Yo Mama</em></li>
+                  <li><em>Losing You</em></li>
+                  <li><em>Yogurt And Football</em></li>
+                  <li><em>Zebra</em></li>
+                  <li><em>A Good Friend</em></li>
+                  <li><em>Ocean</em></li>
                 </ul>
               </div>
-              <figcaption>Flesh &amp; Blood <time datetime="2014">(2014)</time></figcaption>
+              <figcaption>John Butler Tin Shed Tales <time datetime="2012">(2012)</time></figcaption><!--Nom et date de sortie de l'album-->
             </figure>
           </div>
-        </div>
-      </div>
-  <div class="alternative">
-    <div class="container">
-      <h2>Albums live</h2>
-      <div class="row">
-        <div class="four columns">
-          <figure>
-            <img alt="Living 2001-2002" class="disque" src="../medias/images/living.jpg"/>
-            <div>
-              Disque 1
-              <ul>
-                <li><em>Attitude</em></li>
-                <li><em>Pickapart</em></li>
-                <li><em>Valley</em></li>
-                <li><em>Spring</em></li>
-                <li><em>Crazy</em></li>
-                <li><em>Colours</em></li>
-                <li><em>Treat Yo Mama</em></li>
-              </ul>
-              Disque 2
-              <ul>
-                <li><em>Sista</em></li>
-                <li><em>Earthbound Child</em></li>
-                <li><em>Betterman</em></li>
-                <li><em>Don’t Understand</em></li>
-                <li><em>Believe</em></li>
-                <li><em>Money</em></li>
-                <li><em>Take</em></li>
-                <li><em>Home Is Where The Heart Is (studio verson)</em></li>
-              </ul>
-            </div>
-            <figcaption>Living 2001-2002 <time datetime="2003">(2003)</time></figcaption>
-          </figure>
-        </div>
-        <div class="four columns">
-          <figure>
-            <img alt="Live at St. Gallen" class="disque" src="../medias/images/stGallen.jpg"/>
-            <div>
-              Disque 1
-              <ul>
-                <li><em>Treat Yo Mama</em></li>
-                <li><em>Company Sin</em></li>
-                <li><em>Somethings Gotta Give</em></li>
-                <li><em>What You Want</em></li>
-                <li><em>Band Introduction</em></li>
-                <li><em>Oldman</em></li>
-                <li><em>Ocean</em></li>
-              </ul>
-              Disque 2
-              <ul>
-                <li><em>Peaches and Cream</em></li>
-                <li><em>Pickapart</em></li>
-                <li><em>Betterman</em></li>
-                <li><em>Hello</em></li>
-                <li><em>Zebra</em></li>
-                <li><em>Take</em></li>
-              </ul>
-            </div>
-            <figcaption>Live at St. Gallen <time datetime="2005">(2005)</time></figcaption>
-          </figure>
-        </div>
-        <div class="four columns">
-          <figure>
-            <img alt="One small Step..." class="disque" src="../medias/images/oneSmall.jpg"/>
-            <div>
-              <ul>
-                <li><em>Used To Get High</em></li>
-                <li><em>Treat Yo Mama</em></li>
-                <li><em>Danielle</em></li>
-                <li><em>Ocean</em></li>
-                <li><em>Better Than</em></li>
-                <li><em>Zebra</em></li>
-                <li><em>Fire in the sky</em></li>
-                <li><em>Funky Tonight</em></li>
-              </ul>
-            </div>
-            <figcaption>One small Step... <time datetime="2008">(2008)</time></figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row">
-        <div class="four columns">
-          <figure>
-            <img alt="Live at Red Rocks" class="disque" src="../medias/images/liveAtRedRocks.jpg"/>
-            <div>
-              Disque 1
-              <ul>
-                <li><em>Introduction</em></li>
-                <li><em>Use to Get High</em></li>
-                <li><em>I'd Do Anything</em></li>
-                <li><em>Betterman</em></li>
-                <li><em>Don't Wanna See Your Face</em></li>
-                <li><em>Revolution</em></li>
-                <li><em>Hoe Down</em></li>
-                <li><em>Johnny's Gone</em></li>
-                <li><em>Take me</em></li>
-                <li><em>Treat Yo Mama</em></li>
-                <li><em>Losing You (featuring Mama Kin)</em></li>
-                <li><em>Intro to Ocean</em></li>
-                <li><em>Treat Yo Mama</em></li>
-              </ul>
-              Disque 2
-              <ul>
-                <li><em>Ragged Mile</em></li>
-                <li><em>Zebra</em></li>
-                <li><em>Good Excuse</em></li>
-                <li><em>C'mon Now</em></li>
-                <li><em>Close to You</em></li>
-                <li><em>Peaches ans Cream</em></li>
-                <li><em>One Way Road</em></li>
-                <li><em>Funky Tonight</em></li>
-              </ul>
-            </div>
-            <figcaption>Live at Red Rocks <time datetime="2011">(2011)</time></figcaption>
-          </figure>
-        </div>
-        <div class="four columns">
-          <figure>
-            <img alt="John Butler Tin Shed Tales" class="disque" src="../medias/images/tinShed.jpg"/>
-            <div>
-              Disque 1
-              <ul>
-                <li><em>Acknowledging Ancestors</em></li>
-                <li><em>Johnny's Gone</em></li>
-                <li><em>Grass Is Greener</em></li>
-                <li><em>Better Than</em></li>
-                <li><em>We Drove Out To Kalgoorlie</em></li>
-                <li><em>Gonna Be a Long Time</em></li>
-                <li><em>Joseph And Paddy Roe</em></li>
-                <li><em>Kimberley</em></li>
-                <li><em>My Grandfather’s Guitar</em></li>
-                <li><em>Danny Boy</em></li>
-                <li><em>Pickapart</em></li>
-              </ul>
-              Disque 2
-              <ul>
-                <li><em>Mystery Man</em></li>
-                <li><em>Koprivshtitsa</em></li>
-                <li><em>Revolution</em></li>
-                <li><em>Guy On My Shoulder</em></li>
-                <li><em>Used To Get High</em></li>
-                <li><em>Pinjarra </em></li>
-                <li><em>Treat Yo Mama</em></li>
-                <li><em>Losing You</em></li>
-                <li><em>Yogurt And Football</em></li>
-                <li><em>Zebra</em></li>
-                <li><em>A Good Friend</em></li>
-                <li><em>Ocean</em></li>
-              </ul>
-            </div>
-            <figcaption>John Butler Tin Shed Tales <time datetime="2012">(2012)</time></figcaption>
-          </figure>
-        </div>
+        </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
       </div>
     </div>
-  </div>
-    <footer>
-      <div class="row">
-        <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
-        <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
-        <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
-        <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
-      </div>
-      <div class="row">
-        <div class="mentions twelve">
-          <p><a href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a></p>
+  <!--Footer identique pour chaque page .html-->
+      <footer>
+  <!--<div class="row"></div> commun à toutes les pages .html avec tous les liens (externes) vers les réseaux sociaux du groupe. Gris clair puis colorés au survol-->
+        <div class="row">
+          <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
+          <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
+          <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
+          <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
         </div>
-      </div>
-    </footer>
-<!--utilisation d'un petit java script pour le menu déroulant -->
-    <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
-  </body>
-</html>
+        <div class="row">
+          <div class="mentions twelve">
+            <p><a href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a></p>
+            <a class="valid"><img src="../medias/images/W3C_HTML5.png" alt="Html5 Valid"></a>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
+    </body>
+  </html>
