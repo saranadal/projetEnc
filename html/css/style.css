@@ -301,6 +301,7 @@ figure
     font-size: 15px;
     position: relative;
     width: 100%;
+    margin: 0; /*Pour régler le problème de style des navigateurs qui ajoutent une marge.*/
 }
 
 figure img
@@ -356,6 +357,13 @@ figure.video
 
 /*Audio
 ------------------------------------------------------------------------------*/
+#audio
+{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
 audio, .audio {
   width:350px;
 }
@@ -367,6 +375,7 @@ audio, .audio {
     /* premier choix : box-shadow: 2px 2px 5px #080A0D;*/
     color: #403D39;
     font-size: 15px;
+    margin: auto;
 }
 .fontAudio
 {
@@ -390,7 +399,12 @@ footer
     padding-top: 20px;
 }
 
-div.mentions p
+footer .row
+{
+  margin-bottom: 10px;
+}
+
+div.mentions
 {
     font-size: 20px;
     color: black !important;
@@ -400,6 +414,7 @@ div.mentions a
 {
     text-decoration: none;
     color: black;
+    border-bottom: dotted 1px;
 }
 
 div.mentions a:hover
