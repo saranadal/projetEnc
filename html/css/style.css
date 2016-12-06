@@ -61,6 +61,10 @@ h1 img
     transition: 0.5s;
 }
 
+nav ul{
+  margin-left: 20px;
+}
+
 .menu a,
 .menu .bouton
 {
@@ -279,6 +283,10 @@ sup:hover span
     filter: grayscale(0%);
 }
 
+ul
+{
+  list-style: none;
+}
 
 /*Discographie
  -----------------------------------------------------------------------------*/
@@ -346,6 +354,24 @@ figure.video
     width: auto;
 }
 
+/*Audio
+------------------------------------------------------------------------------*/
+audio, .audio {
+  width:350px;
+}
+.audio
+{
+    text-align: center;
+    background-color: rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
+    border-radius: 4px;
+    /* premier choix : box-shadow: 2px 2px 5px #080A0D;*/
+    color: #403D39;
+    font-size: 15px;
+}
+.fontAudio
+{
+  font-size: 20px;
+}
 
 /*---------------------------------FOOTER-------------------------------------*/
 .hautPage img
