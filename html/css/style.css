@@ -54,6 +54,7 @@ h1 img
     z-index: 1; /*gère la superposition (plus il est élevé, plus l'élément est au dessus)*/
     top: 0;
     left: 0;
+    padding-top: 60px;
     background-color: #111;
     overflow-x: hidden; /*permet de cacher le menu sur le côté*/
     transition: 0.5s; /*temps que met le menu latéral à s'ouvrir*/
