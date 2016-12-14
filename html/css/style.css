@@ -41,6 +41,7 @@ h1 img
 
 /*Menu
 ------------------------------------------------------------------------------*/
+
 #menu
 {
     color: black; /*prore à la page discographie.html car le blanc habituel du bouton
@@ -74,6 +75,7 @@ nav ul{
     display: block;
     transition: 0.3s
 }
+
 .bouton:hover
 {
     cursor: pointer;
@@ -131,20 +133,18 @@ nav ul{
 
 /*----------------------------------- BODY -----------------------------------*/
 
+#lienExt
+{
+   color: white;
+   text-decoration: none;
+   border-bottom: dotted 1px;
+}
+
 body
 {
     background-color: #560803; /* hésitation avec cette couleur qui était le premier choix #7F0603;*/
     font-family: Lucidatypewriter, monospace;
 }
-
-/*
-fontsquierrel
-@fontface {
-lui donner un nom puis donner les sources avec différents formats utilisés. src: url ("...") puis indiquer
-le format woff, woff2 puis ttf puis renvoyer le telechargement à webfont generator, puis Download your kit
-}
-{box-sizing border-box pour faire rentrer toutes les marges et les padding à la hauteur fixée}
-*/
 
 .alternative
 {
@@ -197,8 +197,9 @@ div.equalizer p
     height: 366px;
     overflow-y: auto;
     background-color: rgba(155, 100, 100, 0.4);
-    border-radius: 5px;
+    border-radius: 5px; /*Pour arrondir les angles*/
 }
+
 .alternative .equalizer
 {
     background-color: rgba(50, 90, 120, 0.5);
@@ -255,7 +256,7 @@ sup:hover span
 
 .lienExt:hover /*lien qui change de couleur au survol*/
 {
-    color: grey;
+  color: grey;
 }
 
 .lienInterne /*lien souligné  en pointillé de la même couleur que le texte*/
@@ -290,6 +291,7 @@ ul
 
 /*Discographie
  -----------------------------------------------------------------------------*/
+
 figure
 {
     display: inline-block;
@@ -344,6 +346,7 @@ figure:hover div /* affichage des notes au survol */
 
 /*Videos
 ------------------------------------------------------------------------------*/
+
 figure object.video
 {
     width: 100%;
@@ -357,6 +360,7 @@ figure.video
 
 /*Audio
 ------------------------------------------------------------------------------*/
+
 #audio
 {
   font-size: 15px;
@@ -377,12 +381,14 @@ audio, .audio {
     font-size: 15px;
     margin: auto;
 }
+
 .fontAudio
 {
   font-size: 20px;
 }
 
 /*---------------------------------FOOTER-------------------------------------*/
+
 .hautPage img
 {
     width: 50px;
@@ -410,12 +416,12 @@ div.mentions
     color: black !important;
 }
 
-div.mentions a
+/*div.mentions a
 {
     text-decoration: none;
     color: black;
     border-bottom: dotted 1px;
-}
+}*/
 
 div.mentions a:hover
 {
@@ -442,4 +448,20 @@ div.mentions a:hover
 .valid img
 {
     width: 100px;
+}
+
+img.logoGithub
+{
+    width: 45px;
+}
+
+.lienFooter
+{
+    color: black;
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+.lienFooterimg /*Pour ne pas que le lien externe soit souligné de pointillés*/
+{
+    border-bottom: none;
 }
