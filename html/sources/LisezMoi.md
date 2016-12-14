@@ -4,23 +4,32 @@
 
 Les ressources textuelles ayant permis la réalisation des pages html proviennent de la page wikipédia (version française et version anglaise) du groupe et de celle des artistes.
 
-Les photographies proviennent de Ggoogle images. Celles des pochettes de CD proviennent de la rubrique discographie du site internet officiel du groupe.
+Les photographies proviennent de Google images. Celles des pochettes de CD proviennent de la rubrique discographie du site internet officiel du groupe.
 
 Cinq vidéos ajoutés à la page videos.html proviennent de Youtube.
 
-Les deux fichiers audio de la page audio.html proviennent de ma discothèque personnelle.
+Les deux fichiers audio de la page audio.html proviennent de ma discothèque personnelle (à ne pas diffuser).
 
-L'ensemble des pages html et la feuille de styles ont été validées par le W3C Validator (html et css).
+L'ensemble des pages html et la feuille de style ont été validées par le W3C Validator (html et css).
 
 ## Le code HTML5 / CSS :
 
 Le code Html suit une organisation classique, à savoir :
-
-* <head>
-* <header>
-* <body>
-* <div>
-* <footer>
+```xml
+<html/>
+|
++——<head/>
+|
++——<body/>
+|   |
+|   +——<header/>
+|   |
+|   +——<div/>
+|   |   |
+|   |   +——contenu
+|   |
+|   +——<footer/>
+```
 
 Le contenu des cours a été la principale ressource pour la réalisation de ce site web.
 Puis, les sites Open Class Room, W3school et W3.org ont été régulièrement consultés, notamment pour le menu et les notes en survol par exemple. Pour mieux comprendre les possibilités de Skeleton, le site www.codepen.io a également été régulièrement visité.

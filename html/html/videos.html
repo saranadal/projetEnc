@@ -4,131 +4,142 @@
   <head>
     <meta charset="utf-8"/>
     <title>The John Butler Trio</title>
+    <!--Feuille de style CSS perso-->
     <link href="../css/style.css" rel="stylesheet" type="text/css"/>
     <!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css. Il permet la mise en place aisée d'un responsive design-->
     <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/x-icon" href="../medias/images/logoJbt.png"/>
   </head>
-<!--Organisation des pages html-->
-<!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les élémentions de la page-->
-<!-- == header == est identique pour toutes les pages. Il comprend un élément <div></div> avec une class="banniere", une image. == <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence. == menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page. Utilisation d'un javascript pour le menu.-->
-<!--Body-->
-<body>
-  <!--Header-->
-  <header>
-    <!--Bannière-->
-    <div class="banniere" id="hautPage"><!--ancre pour icône haut de page-->
-      <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerJohnButler.jpg"/>
-      <!--Page en deux parties avec deux titres de niveau <h2></h2>. Les vidéos proviennent de Youtube et ont leur titre et date écrits en-dessous.-->
-      <h1><span>Vidéos</span></h1> <!--Titre de premier niveau-->
-    </div>
-    <!--Menu-->
-    <nav id="navigation" class="menu">
-      <!--Java script-->
-      <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li onclick="deroulant()"><span class="bouton">Les membres</span>
-          <ul id="deroulant" class="deroulant">
-            <li>
-              <a href="membres.html">Membres actuels</a>
-              <ul>
-                <li><a href="membres.html#johnButler">John Butler</a></li><!--ancre pour chaque artiste-->
-                <li><a href="membres.html#byronLuiters">Byron Luiters</a></li>
-                <li><a href="membres.html#grantGerathy">Grant Gerathy</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#anciensMembres">Anciens membres</a>
-              <ul>
-                <li><a href="membres.html#nickyBomba">Nicky Bomba</a></li>
-                <li><a href="membres.html#michaelBarker">Michael Barker</a></li>
-                <li><a href="membres.html#shannonBirchall">Shannon Birchall</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="actionsEtEngagements.html">Actions et engagements</a></li>
-        <li><a href="discographie.html">Discographie</a></li>
-        <li><a href="videos.html">Vidéos</a></li>
-      </ul>
-    </nav>
-    <button onclick="ouverture()" class="btn">menu</button>
-  </header>
-  <div class="container">
-    <!--Musique-->
-    <h2>Musique</h2><!--Titre de deuxième niveau-->
-    <div class="row">
-      <div class="twelve columns">
-        <figure class="video">
-          <object id="ocean" class="video" height="500" width="1000" data="https://www.youtube.com/embed/LsnFvEQYJPU?list=RD6VAkOhXIsI0"></object><!--id="ocean" pour ancre page actionEtEngagements.html-->
-          <figcaption>John Butler Trio - Ocean - Live at Federation Square</figcaption>
-        </figure>
+  <!--Organisation des pages html-->
+  <!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les élémentions de la page-->
+  <!-- == header == est identique pour toutes les pages. Il comprend un élément <div></div> avec une class="banniere", une image. == <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence. == menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page. Utilisation d'un javascript pour le menu.-->
+  <!--Body-->
+  <body>
+    <!--Header-->
+    <header>
+      <!--Bannière-->
+      <div class="banniere" id="hautPage"><!--ancre pour icône haut de page-->
+        <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerJohnButler.jpg"/>
+        <!--Page en deux parties avec deux titres de niveau <h2></h2>. Les vidéos proviennent de Youtube et ont leur titre et date écrits en-dessous.-->
+        <h1><span>Vidéos</span></h1> <!--Titre de premier niveau-->
       </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <figure class="video">
-          <object class="video" height="500" width="1000" data="https://www.youtube.com/embed/CRRBvA6tap8"></object>
-          <figcaption>John Butler Trio - Live at Red Rocks - Trailer</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <figure class="video">
-          <object id="treat" class="video" height="500" width="1000" data="https://www.youtube.com/embed/AsGUirwZ4rQ"></object><!--id="treat" pour ancre page actionEtEngagements.html-->
-          <figcaption>John Butler Trio - Treat Yo Mama - Official</figcaption>
-        </figure>
-      </div>
-    </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
-  </div>
-  <div class="alternative"><!--class="alternative" pour changer la couleur du background-->
-    <div class="container">
-      <!--Resistance et engagements-->
-      <h2>Resistance et engagements</h2><!--Titre de deuxième niveau-->
+      <!--Menu-->
+      <nav id="navigation" class="menu">
+        <!--Java script pour le menu qui s'ouvre et se ferme en cliquant sur la petite croix-->
+        <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a><!--class="fermeture" pour la petite croix de fermeture dans le menu déroulé en haut à droite-->
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li onclick="deroulant()"><span class="bouton">Les membres</span><!--class="bouton" permet de changer le curseur en pointeur pour la partie déroulante du menu (membres)-->
+            <ul id="deroulant" class="deroulant">
+              <li>
+                <a href="membres.html">Membres actuels</a>
+                <ul>
+                  <li><a href="membres.html#johnButler">John Butler</a></li><!--ancre pour chaque artiste-->
+                  <li><a href="membres.html#byronLuiters">Byron Luiters</a></li>
+                  <li><a href="membres.html#grantGerathy">Grant Gerathy</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#anciensMembres">Anciens membres</a>
+                <ul>
+                  <li><a href="membres.html#nickyBomba">Nicky Bomba</a></li>
+                  <li><a href="membres.html#michaelBarker">Michael Barker</a></li>
+                  <li><a href="membres.html#shannonBirchall">Shannon Birchall</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="actionsEtEngagements.html">Actions et engagements</a></li>
+          <li><a href="discographie.html">Discographie</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+        </ul>
+      </nav>
+      <button onclick="ouverture()" class="btn">menu</button><!--class="btn" pour le logo Menu placé en haut à droit des pages html-->
+    </header>
+    <div class="container"><!--bloc-->
+      <!--Musique-->
+      <h2>Musique</h2><!--Titre de deuxième niveau-->
       <div class="row">
-        <div class="twelve columns">
+        <div class="twelve columns"><!--permet d'avoir un bloc de 12 colonnes, soit le maximum possible-->
           <figure class="video">
-            <object id="kimberley" class="video" height="500" width="1000" data="https://www.youtube.com/embed/JaPpYiOx83I"></object><!--id="Kimberley" pour ancre page actionEtEngagements.html-->
-            <figcaption>John Butler - Revolution - At The Kimberley coast gas protest</figcaption>
+            <!--id="" pour ancre actionsetEngagements.html-->
+            <object id="ocean" class="video" height="500" width="1000" data="https://www.youtube.com/embed/LsnFvEQYJPU?list=RD6VAkOhXIsI0"></object><!--id="ocean" pour ancre page actionEtEngagements.html-->
+            <figcaption>John Butler Trio - Ocean - Live at Federation Square</figcaption>
           </figure>
         </div>
       </div>
       <div class="row">
         <div class="twelve columns">
           <figure class="video">
-            <object class="video" height="500" width="1000" data="https://www.youtube.com/embed/e_M2HrgEPQs"></object>
-            <figcaption>John Butler et Danielle Caruana (Mama Kin) - The Seed Fund - 2010</figcaption>
+            <object class="video" height="500" width="1000" data="https://www.youtube.com/embed/CRRBvA6tap8"></object>
+            <figcaption>John Butler Trio - Live at Red Rocks - Trailer</figcaption>
           </figure>
         </div>
-      </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <figure class="video">
+            <!--id="" pour ancre actionsetEngagements.html-->
+            <object id="treat" class="video" height="500" width="1000" data="https://www.youtube.com/embed/AsGUirwZ4rQ"></object><!--id="treat" pour ancre page actionEtEngagements.html-->
+            <figcaption>John Butler Trio - Treat Yo Mama - Official</figcaption>
+          </figure>
+        </div>
+      </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a><!--Icone haut de page-->
     </div>
-  </div>
-  <!--Footer identique pour chaque page .html-->
-  <footer>
-<!--<div class="row"></div> commun à toutes les pages .html avec tous les liens (externes) vers les réseaux sociaux du groupe. Gris clair puis colorés au survol-->
-    <div class="row">
-      <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
-      <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
-      <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
-      <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
-    </div>
-    <div class="row">
-      <div class="twelve mentions">
-        <a class="lienFooter" href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a class="lienFooter" href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a>
-        <br />
-        <a class="lienFooter" href="#" onClick="window.open('audio.html','pagename','resizable,height=250,width=430'); return false;">Un peu de musique…</a><noscript>javaScript est recquis pour l'utilisation du lien précédent. Vous pouvez toutefois utiliser ce lien : <a href="audio.html" target="_blank">Un peu de musique pour vous accompagner durant votre visite.</a></noscript>
+    <div class="alternative"><!--class="alternative" pour changer la couleur du background-->
+      <div class="container">
+        <!--Resistance et engagements-->
+        <h2>Resistance et engagements</h2><!--Titre de deuxième niveau-->
+        <div class="row">
+          <div class="twelve columns">
+            <figure class="video">
+              <!--id="" pour ancre actionsetEngagements.html-->
+              <object id="kimberley" class="video" height="500" width="1000" data="https://www.youtube.com/embed/JaPpYiOx83I"></object><!--id="Kimberley" pour ancre page actionEtEngagements.html-->
+              <figcaption>John Butler - Revolution - At The Kimberley coast gas protest</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <figure class="video">
+              <object class="video" height="500" width="1000" data="https://www.youtube.com/embed/e_M2HrgEPQs"></object>
+              <figcaption>John Butler et Danielle Caruana (Mama Kin) - The Seed Fund - 2010</figcaption>
+            </figure>
+          </div>
+        </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a><!--Icone haut de page-->
       </div>
     </div>
-    <div class="row">
-      <div class="twelve mentions">
-        <a class="valid"><img src="../medias/images/W3C_HTML5.png" alt="Html5 Valid"></a>
-        <a class="lienFooterimg" href="https://github.com/saranadal/projetEnc" target="_blank"><img class="logoGithub" src="../medias/images/github.png" alt="Github"/></a>
+    <!--Footer identique pour chaque page .html-->
+    <footer>
+      <!--<div class="row"></div> commun à toutes les pages .html avec tous les liens (externes) vers les réseaux sociaux du groupe. Gris clair puis colorés au survol-->
+      <div class="row">
+        <!--Offset-by-four pour que les 4 logos soient centrés (laisse un esapce correspondant à 4 colonnes sur la gauche)-->
+        <!--target="_blank" pour ouverture du lien externe dans un autre onglet de navigation-->
+        <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
+        <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
+        <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
+        <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
       </div>
-    </div>
-  </footer>
-  <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body></body>-->
+      <div class="row">
+        <div class="twelve mentions">
+          <!--Contact courriel-->
+          <a class="lienFooter" href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a class="lienFooter" href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a>
+          <br />
+          <!--onClick="" pour ouverture d'une nouvelle fenêtre offrant l'écoute de chansons-->
+          <a class="lienFooter" href="#" onClick="window.open('audio.html','pagename','resizable,height=250,width=430'); return false;">Un peu de musique…</a><noscript>javaScript est recquis pour l'utilisation du lien précédent. Vous pouvez toutefois utiliser ce lien : <a href="audio.html" target="_blank">Un peu de musique pour vous accompagner durant votre visite.</a></noscript>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve mentions">
+          <!--class="valid" pour modifier les dimensions du logo-->
+          <a class="valid"><img src="../medias/images/W3C_HTML5.png" alt="Html5 Valid"></a>
+          <!--lienFooterimg pour le différencier des autres liens (non souligné, coloré, lien externe)-->
+          <a class="lienFooterimg" href="https://github.com/saranadal/projetEnc" target="_blank"><img class="logoGithub" src="../medias/images/github.png" alt="Github"/></a>
+        </div>
+      </div>
+    </footer>
+    <!--Utilisation d'un script pour le menu-->
+    <script src="../js/scriptsJs.js"></script>
   </body>
 </html>

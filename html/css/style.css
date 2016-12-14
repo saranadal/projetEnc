@@ -10,14 +10,14 @@
 
 .banniere
 {
-    position: relative;
+    position: relative; /*permet de superposer le titre de la page sur l'image de la bannière*/
     width: 100%; /*pour la compatibilité avec IE6*/
     text-align: center;
 }
 
 h1
 {
-    position: absolute;
+    position: absolute; /*permet de superposer le titre de la page sur l'image de la bannière*/
     top: 50%;
     text-align: center;
     width: 100%;
@@ -26,26 +26,24 @@ h1
 }
 
 h1 span
-{ /*permet l'effet de transparence*/
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.4);
-    padding: 100px;
+{
+    background: rgb(0, 0, 0);/*pour les anciens navigateurs qui ne prennent pas en compte l'effet de transparence*/
+    background: rgba(0, 0, 0, 0.4);/*permet l'effet de transparence*/
+    padding: 100px;/*grandes marges intérieures pour le titre*/
 }
 
 h1 img
-{
+{/*logo du groupe présent uniquement sur la page index.html (acceuil)*/
     max-height: 85px;
     position: absolute;
-    top: left bottom;
 }
 
 /*Menu
 ------------------------------------------------------------------------------*/
 
 #menu
-{
-    color: black; /*prore à la page discographie.html car le blanc habituel du bouton
-                 ne se voyait pas bien*/
+{/*propre à la page discographie.html car le blanc habituel du bouton ne se voyait pas bien*/
+    color: black;
 }
 
 .menu
@@ -53,16 +51,16 @@ h1 img
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1; /*gère la superposition (plus il est élevé, plus l'élément est au dessus)*/
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+    overflow-x: hidden; /*permet de cacher le menu sur le côté*/
+    transition: 0.5s; /*temps que met le menu latéral à s'ouvrir*/
 }
 
-nav ul{
+nav ul
+{
   margin-left: 20px;
 }
 
@@ -77,7 +75,7 @@ nav ul{
 }
 
 .bouton:hover
-{
+{/*permet de changer le curseur en pointeur pour la partie déroulante du menu (membres) gérée par un span et javascript*/
     cursor: pointer;
 }
 
@@ -86,11 +84,11 @@ nav ul{
 .menu .bouton:hover,
 .offcanvas .bouton:focus
 {
-    color: #f1f1f1;
+    color: #f1f1f1; /*changement de couleur des liens du menu au survol*/
 }
 
 .menu .fermeture
-{
+{/*pour la petite croix de fermeture dans le menu déroulé en haut à droite*/
     position: absolute;
     top: 0;
     right: 25px;
@@ -98,8 +96,8 @@ nav ul{
     margin-left: 50px;
 }
 
-@media screen and (max-height : 450px) /*javaScript*/
-{
+@media screen and (max-height : 450px)
+{/*javaScript*/
     .menu{
         padding-top: 15px;
     }
@@ -120,9 +118,9 @@ nav ul{
 }
 
 .btn
-{
+{/*pour le logo MENU placé en haut à droite des pages html*/
     top: 20px;
-    position: fixed;
+    position: fixed;/*permet au bouton d'avoir une position fixe sur les pages html*/
     z-index: 100;
     right: 20px;
     width: 120px;
@@ -133,26 +131,19 @@ nav ul{
 
 /*----------------------------------- BODY -----------------------------------*/
 
-#lienExt
-{
-   color: white;
-   text-decoration: none;
-   border-bottom: dotted 1px;
-}
-
 body
 {
-    background-color: #560803; /* hésitation avec cette couleur qui était le premier choix #7F0603;*/
+    background-color: #560803; /* hésitation avec cette couleur qui était le premier choix #7F0603*/
     font-family: Lucidatypewriter, monospace;
 }
 
 .alternative
-{
+{/*pour changer la couleur du background (Cf. body)*/
     background-color: #0C2B63; /*couleur complémentaire du background-color du body*/
 }
 
 h2
-{
+{/*titre de 2ème niveau*/
     font-size: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -162,7 +153,7 @@ h2
 }
 
 h3
-{
+{/*titre de 3ème niveau*/
     color: black;
 }
 
@@ -197,7 +188,7 @@ div.equalizer p
     height: 366px;
     overflow-y: auto;
     background-color: rgba(155, 100, 100, 0.4);
-    border-radius: 5px; /*Pour arrondir les angles*/
+    border-radius: 5px; /*permet d'arrondir les angles*/
 }
 
 .alternative .equalizer
@@ -207,7 +198,7 @@ div.equalizer p
 
 .imgContainer
 {
-    overflow: hidden;
+    overflow: hidden; /*rogne le contenu pouvant dépasser des div*/
     background-color: rgba(0, 0, 0, 0) !important; /*!important permet de déroger à la règle établie par le framework skeleton*/
 }
 
@@ -223,70 +214,68 @@ div.equalizer img
 }
 
 sup
-{
+{/*contenant (pop-up) de la note en survol*/
     position: relative;
-    color: #5107E2
+    color: #5107E2;
 }
 
 sup span
-{
-    display: none;
+{/*note contenu dans la pop-up*/
+    display: none; /*permet de cacher la note*/
     font-size: 15px;
     padding: 10px;
     margin: 5px;
     line-height: 15px;
     width: 500px;
     color: grey;
-    border-radius: 5px;
+    border-radius: 5px; /*permet d'arrondir les angles*/
 }
 
 sup:hover span
-{
-    display: block;
+{/*survol*/
+    display: block; /*affiche la note au survol de l'appel de note*/
     position: absolute;
     background-color: rgb(240, 218, 201);
 }
 
-.lienExt /*lien souligné  en pointillé de la même couleur que le texte*/
-{
+.lienExt
+{/*lien souligné  en pointillé de la même couleur que le texte*/
     color: white;
     text-decoration: none;
     border-bottom: dotted 1px;
 }
 
-.lienExt:hover /*lien qui change de couleur au survol*/
-{
+.lienExt:hover
+{/*lien qui change de couleur au survol*/
   color: grey;
 }
 
-.lienInterne /*lien souligné  en pointillé de la même couleur que le texte*/
-{
+.lienInterne
+{/*lien souligné  en pointillé de la même couleur que le texte*/
     color: white;
     text-decoration: none;
     border-bottom: dotted 1px;
 }
 
-.lienInterne:hover /*lien qui change de couleur au survol*/
-{
+.lienInterne:hover
+{/*lien qui change de couleur au survol*/
     color: grey;
-}
-
-.imgReseau
-{
-    width: 45px;
-    filter: grayscale(100%);
-    position: absolute;
-}
-
-.imgReseau:hover
-{
-    width: 45px;
-    filter: grayscale(0%);
 }
 
 ul
 {
-  list-style: none;
+  list-style: none; /*supprime les puces des listes*/
+}
+
+.hautPage img
+{
+    width: 50px;
+}
+
+.hautPage
+{
+    float: right; /*positionne le lien haut de page à droite*/
+    margin-right: 40px;
 }
 
 /*Discographie
@@ -298,12 +287,12 @@ figure
     text-align: center;
     background-color: rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
     border-radius: 4px;
-    /* premier choix : box-shadow: 2px 2px 5px #080A0D;*/
+    /* premier choix : box-shadow: 2px 2px 5px #080A0D*/
     color: #403D39;
     font-size: 15px;
-    position: relative;
+    position: relative; /*pour la superposition des titres au survol*/
     width: 100%;
-    margin: 0; /*Pour régler le problème de style des navigateurs qui ajoutent une marge.*/
+    margin: 0; /*Pour régler le problème de style des navigateurs qui ajoutent une marge*/
 }
 
 figure img
@@ -313,26 +302,26 @@ figure img
 
 figure div
 {
-    display: none;
-    width: 100%;
+    display: none; /*cache le contenu de la div (affichage au survol)*/
+    width: 100%; /*contraint la hauteur et la largeur de l'élément div à celles de l'élément figure*/
     height: 100%;
-    overflow-y: auto;
+    overflow-y: auto; /*crée une scrollbar lorsque le texte est trop long*/
 }
 
 figure div ul
 {
-    list-style-type: decimal;
+    list-style-type: decimal; /*numérotation des pistes d'album*/
 }
 
-figure:hover div /* affichage des notes au survol */
+figure:hover div
 {
-    display: inline;
-    position: absolute;
-    background-color: rgb(25, 25, 25);
+    display: inline; /*permet l'affichage au survol*/
+    position: absolute; /*pour la superposition des titres au survol*/
+    background-color: rgb(25, 25, 25); /*pour les anciens navigateurs ne gérant pas la transparence*/
     background-color: rgba(25, 25, 25, .7); /* légère transparence */
     left: 0;
     top: 0;
-    z-index: 500;
+    z-index: 500; /*priorité de superposition*/
     color: white;
     box-shadow: 6px 6px 10px #080A0D;
     border-radius: 4px;
@@ -368,18 +357,20 @@ figure.video
   text-align: center;
 }
 
-audio, .audio {
+audio, .audio
+{
   width:350px;
 }
+
 .audio
 {
-    text-align: center;
-    background-color: rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
-    border-radius: 4px;
-    /* premier choix : box-shadow: 2px 2px 5px #080A0D;*/
-    color: #403D39;
-    font-size: 15px;
-    margin: auto;
+  text-align: center;
+  background-color: rgb(240, 218, 201); /*Pour rappeler la couleur du Footer*/
+  border-radius: 4px;
+  /* premier choix : box-shadow: 2px 2px 5px #080A0D;*/
+  color: #403D39;
+  font-size: 15px;
+  margin: auto;
 }
 
 .fontAudio
@@ -389,15 +380,6 @@ audio, .audio {
 
 /*---------------------------------FOOTER-------------------------------------*/
 
-.hautPage img
-{
-    width: 50px;
-}
-.hautPage
-{
-    float: right;
-    margin-right: 40px;
-}
 
 footer
 {
@@ -413,15 +395,7 @@ footer .row
 div.mentions
 {
     font-size: 20px;
-    color: black !important;
 }
-
-/*div.mentions a
-{
-    text-decoration: none;
-    color: black;
-    border-bottom: dotted 1px;
-}*/
 
 div.mentions a:hover
 {
@@ -431,13 +405,13 @@ div.mentions a:hover
 .imgFooter
 {
     width: 50px;
-    filter: grayscale(100%);
+    filter: grayscale(100%); /*met les images en niveau de gris*/
 }
 
 .imgFooter:hover
 {
     width: 50px;
-    filter: grayscale(0%);
+    filter: grayscale(0%); /*met les images en couleurs au survol*/
 }
 
 .mentions
@@ -461,6 +435,7 @@ img.logoGithub
     text-decoration: none;
     border-bottom: dotted 1px;
 }
+
 .lienFooterimg /*Pour ne pas que le lien externe soit souligné de pointillés*/
 {
     border-bottom: none;

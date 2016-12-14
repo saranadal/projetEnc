@@ -4,8 +4,9 @@
   <head>
       <meta charset="utf-8"/>
       <title>The John Butler Trio</title>
+      <!--Feuille de style CSS perso-->
       <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-  <!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css. Il permet la mise en place aisée d'un responsive design-->
+      <!--lien vers skeleton (framework css) choix de ce framework pour sa légereté car il a été créé en Css. Il permet la mise en place aisée d'un responsive design-->
       <link href="../css/skeleton/normalize.css" rel="stylesheet" type="text/css"/>
       <link href="../css/skeleton/skeleton.css" rel="stylesheet" type="text/css"/>
       <link rel="shortcut icon" type="image/x-icon" href="../medias/images/logoJbt.png"/>
@@ -13,22 +14,23 @@
   <!--Organisation des pages html-->
   <!--Le <body></body> contient un élément <div></div> principal dans lequel sont placés tous les éléments de la page-->
   <!-- == header == est identique pour toutes les pages. Il comprend un élément <div></div> avec une class="banniere", une image. == <h1></h1> == titre différent pour chaque page mais centré sur l'image avec un effet de transparence. == menu == avec lélément <nav></nav> qui est déroulant et à gauche de la page. Utilisation d'un javascript pour le menu.-->
-  <!--Body-->
+    <!--Body-->
     <body>
-  <!--Header-->
+      <!--Header-->
       <header>
-  <!--Bannière-->
+        <!--Bannière-->
         <div class="banniere" id="hautPage"><!--ancre pour icône haut de page-->
           <img id="imgBanniere" alt="headerJbt" src="../medias/images/headerGroupe3.jpg"/>
-  <!--Page en deux parties avec deux titres <h2></h2>. Pochettes des cd avec leur titre en-dessous. Les titres des albums aparaissent en survol avec effet de transparence et un effet 3D grâce à la box-shadow cf: page CSS-->
+          <!--Page en deux parties avec deux titres <h2></h2>. Pochettes des cd avec leur titre en-dessous. Les titres des albums aparaissent en survol avec effet de transparence et 3D grâce à la box-shadow cf: page CSS-->
           <h1><span>Discographie</span></h1><!--Titre de premier niveau-->
         </div>
-  <!--Menu-->
+        <!--Menu-->
         <nav id="navigation" class="menu">
-          <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a>
+          <!--Java script pour le menu qui s'ouvre et se ferme en cliquant sur la petite croix-->
+          <a href="javascript:void(0)" class="fermeture" onclick="fermeture()">&times;</a><!--class="fermeture" pour la petite croix de fermeture dans le menu déroulé en haut à droite-->
           <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li onclick="deroulant()"><span class="bouton">Les membres</span>
+            <li onclick="deroulant()"><span class="bouton">Les membres</span><!--class="bouton" permet de changer le curseur en pointeur pour la partie déroulante du menu (membres)-->
               <ul id="deroulant" class="deroulant">
                 <li>
                   <a href="membres.html">Membres actuels</a>
@@ -53,12 +55,14 @@
             <li><a href="videos.html">Vidéos</a></li>
           </ul>
         </nav>
-        <button id="menu" onclick="ouverture()" class="btn">menu</button>
+        <!--id="menu" propre à cette page car le blanc habituel du bouton ne se voyait pas bien-->
+        <button id="menu" onclick="ouverture()" class="btn">menu</button><!--class="btn" pour le logo Menu placé en haut à droit des pages html-->
       </header>
-      <div class="container">
-  <!--Albums studio-->
+      <div class="container"><!--bloc-->
+        <!--Albums studio-->
         <h2>Albums studio</h2><!--Titre de deuxième niveau-->
         <div class="row"><!--découpage vertical-->
+          <!--four columns permet d'avoir trois blocs de 4 colonnes-->
           <div class="four columns"><!--découpage horizontal-->
             <figure>
               <img alt="John Butler 1998" class="disque" src="../medias/images/johnButlerCd.jpg"/>
@@ -195,7 +199,7 @@
                 <figcaption>Flesh &amp; Blood <time datetime="2014">(2014)</time></figcaption><!--Nom et date de sortie de l'album-->
               </figure>
             </div>
-          </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
+          </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a><!--Icone haut de page-->
         </div>
     <div class="alternative">
       <div class="container">
@@ -349,32 +353,39 @@
               <figcaption>John Butler Tin Shed Tales <time datetime="2012">(2012)</time></figcaption><!--Nom et date de sortie de l'album-->
             </figure>
           </div>
-        </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a>
+        </div><a href="#hautPage" class="hautPage"><img alt="hautPage" src="../medias/images/hautPage.png"/></a><!--Icone haut de page-->
       </div>
     </div>
-  <!--Footer identique pour chaque page .html-->
-  <footer>
-<!--<div class="row"></div> commun à toutes les pages .html avec tous les liens (externes) vers les réseaux sociaux du groupe. Gris clair puis colorés au survol-->
-    <div class="row">
-      <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
-      <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
-      <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
-      <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
-    </div>
-    <div class="row">
-      <div class="twelve mentions">
-        <a class="lienFooter" href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a class="lienFooter" href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a>
-        <br />
-        <a class="lienFooter" href="#" onClick="window.open('audio.html','pagename','resizable,height=250,width=430'); return false;">Un peu de musique…</a><noscript>javaScript est recquis pour l'utilisation du lien précédent. Vous pouvez toutefois utiliser ce lien : <a href="audio.html" target="_blank">Un peu de musique pour vous accompagner durant votre visite.</a></noscript>
+    <!--Footer identique pour chaque page .html-->
+    <footer>
+      <!--<div class="row"></div> commun à toutes les pages .html avec tous les liens (externes) vers les réseaux sociaux du groupe. Gris clair puis colorés au survol-->
+      <div class="row">
+        <!--Offset-by-four pour que les 4 logos soient centrés (laisse un esapce correspondant à 4 colonnes sur la gauche)-->
+        <!--target="_blank" pour ouverture du lien externe dans un autre onglet de navigation-->
+        <div class="offset-by-four one columns"><a href="https://www.facebook.com/JohnButlerTrio/" target="_blank" class="footer"><img class="imgFooter" alt="facebook" src="../medias/images/facebook.png"/></a></div>
+        <div class="one columns"><a href="https://twitter.com/johnbutlertrio" target="_blank" class="footer"><img class="imgFooter" alt="twitter" src="../medias/images/twitter.png"/></a></div>
+        <div class="one columns"><a href="https://www.instagram.com/johnbutlertrio/" target="_blank" class="footer"><img class="imgFooter" alt="instagram" src="../medias/images/insta.png"/></a></div>
+        <div class="one columns"><a href="https://www.youtube.com/user/jbtdotcom" target="_blank" class="footer"><img class="imgFooter" alt="youtube" src="../medias/images/youtube.png"/></a></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="twelve mentions">
-        <a class="valid"><img src="../medias/images/W3C_HTML5.png" alt="Html5 Valid"></a>
-        <a class="lienFooterimg" href="https://github.com/saranadal/projetEnc" target="_blank"><img class="logoGithub" src="../medias/images/github.png" alt="Github"/></a>
+      <div class="row">
+        <div class="twelve mentions">
+          <!--Contact courriel-->
+          <a class="lienFooter" href="mailto:sara.nadal@enc-sorbonne.fr">Contact</a> | Ce site a été réalisé dans le cadre du cours d'HTML de l'Énc | <a class="lienFooter" href="https://fr.wikipedia.org/wiki/The_John_Butler_Trio" target="_blank">Sources</a>
+          <br />
+          <!--onClick="" pour ouverture d'une nouvelle fenêtre offrant l'écoute de chansons-->
+          <a class="lienFooter" href="#" onClick="window.open('audio.html','pagename','resizable,height=250,width=430'); return false;">Un peu de musique…</a><noscript>javaScript est recquis pour l'utilisation du lien précédent. Vous pouvez toutefois utiliser ce lien : <a href="audio.html" target="_blank">Un peu de musique pour vous accompagner durant votre visite.</a></noscript>
+        </div>
       </div>
-    </div>
-  </footer>
-      <script src="../js/scriptsJs.js"></script> <!--<script> toujours en dernier dans <body>-->
-    </body>
-  </html>
+      <div class="row">
+        <div class="twelve mentions">
+          <!--class="valid" pour modifier les dimensions du logo-->
+          <a class="valid"><img src="../medias/images/W3C_HTML5.png" alt="Html5 Valid"></a>
+          <!--lienFooterimg pour le différencier des autres liens (non souligné, coloré, lien externe)-->
+          <a class="lienFooterimg" href="https://github.com/saranadal/projetEnc" target="_blank"><img class="logoGithub" src="../medias/images/github.png" alt="Github"/></a>
+        </div>
+      </div>
+    </footer>
+    <!--Utilisation d'un script pour le menu-->
+    <script src="../js/scriptsJs.js"></script>
+  </body>
+</html>
