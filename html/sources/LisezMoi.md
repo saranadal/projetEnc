@@ -5,9 +5,9 @@
 ```
 .
 |
-+—— index.html (page d'accueil)
-|
 +—— /html/
+|   |
+|   +—— index.html
 |   |
 |   +—— membres.html
 |   |
@@ -52,11 +52,11 @@
 
 ## Le contenu général :
 
-Les ressources textuelles ayant permis la réalisation des pages html proviennent de la page wikipédia (version française et version anglaise) du groupe et de celle des artistes.
+Les ressources textuelles ayant permis la réalisation des pages html proviennent de la page Wikipédia (version française et version anglaise) du groupe et de celle des artistes.
 
 Les photographies proviennent de Google images. Celles des pochettes de CD proviennent de la rubrique discographie du site internet officiel du groupe.
 
-Cinq vidéos ajoutés à la page videos.html proviennent de Youtube.
+Cinq vidéos ajoutées à la page videos.html proviennent de Youtube.
 
 Les deux fichiers audio de la page audio.html proviennent de ma discothèque personnelle (à ne pas diffuser).
 
